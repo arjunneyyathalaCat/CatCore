@@ -1,0 +1,1089 @@
+id: https://w3id.org/nfdi4cat/catcore
+name: catcore-metadata
+title: CatCore Metadata Reference Model
+description: |-
+  The CatCore describes the minimum information which must be reported with research data 
+  concerning the field of catalysis. This guideline helps to handle and standardize data 
+  based on the FAIR principle (Findable, Accessible, Interoperable, Reusable).
+  
+license: CC-BY-4.0
+version: 1.0.0
+
+prefixes:
+  catcore: https://w3id.org/nfdi4cat/catcore/
+  voc4cat: https://w3id.org/nfdi4cat/voc4cat_
+  CHMO: http://purl.obolibrary.org/obo/CHMO_
+  OBI: http://purl.obolibrary.org/obo/OBI_
+  AFR: http://purl.allotrope.org/ontologies/result#AFR_
+  AFP: http://purl.allotrope.org/ontologies/process#AFP_
+  AFQ: http://purl.allotrope.org/ontologies/quality#AFQ_
+  NCIT: http://purl.obolibrary.org/obo/NCIT_
+  nmrCV: http://nmrML.org/nmrCV#NMR:
+  linkml: https://w3id.org/linkml/
+
+default_prefix: catcore
+default_range: string
+
+imports:
+  - linkml:types
+
+classes:
+
+  CatCoreEntity:
+    abstract: true
+    description: Root class for all CatCore entities
+    slots:
+      - identifier
+    
+  # ==================== CAT CORE ====================
+  
+  CatCore:
+    is_a: CatCoreEntity
+    description: |-
+      The CatCore describes the minimum information which must be reported with research data 
+      concerning the field of catalysis.
+    slots:
+      - catalysis_research_field
+      - reaction_type
+      - active_site
+    slot_usage:
+      catalysis_research_field:
+        required: true
+        multivalued: false
+      reaction_type:
+        required: true
+        multivalued: false
+      active_site:
+        required: false
+        multivalued: false
+
+  # ==================== SYNTHESIS ====================
+  
+  Synthesis:
+    is_a: CatCoreEntity
+    description: |-
+      The data class 'Synthesis' describes the minimum information which should be reported 
+      with research data concerning the field of catalyst synthesis.
+    slots:
+      - nominal_composition
+      - catalyst_measured_properties
+      - precursor
+      - preparation_method
+      - storage_conditions
+      - support
+      - solvent
+      - sample_pretreatment
+    slot_usage:
+      nominal_composition:
+        required: true
+      catalyst_measured_properties:
+        required: true
+      precursor:
+        required: true
+      preparation_method:
+        required: true
+      storage_conditions:
+        required: false
+        recommended: true
+
+  Precursor:
+    is_a: CatCoreEntity
+    description: Precursor material used in catalyst synthesis
+    slots:
+      - precursor_quantity
+    slot_usage:
+      precursor_quantity:
+        required: true
+
+  PreparationMethod:
+    is_a: CatCoreEntity
+    description: Method used for catalyst preparation
+    abstract: true
+    
+  Impregnation:
+    is_a: PreparationMethod
+    class_uri: catcore:Impregnation
+    description: Impregnation method for catalyst preparation
+    slots:
+      - impregnation_type
+      - impregnation_duration
+      - impregnation_temperature
+      - drying_device
+      - drying_temperature
+      - drying_time
+      - drying_atmosphere
+      - calcination_initial_temperature
+      - calcination_final_temperature
+      - calcination_dwelling_time
+      - number_of_cycles
+      - calcination_gaseous_environment
+      - calcination_heating_rate
+      - calcination_gas_flow_rate
+
+  CoPrecipitation:
+    is_a: PreparationMethod
+    class_uri: catcore:CoPrecipitation
+    description: Co-precipitation method for catalyst preparation
+    slots:
+      - precipitating_agent
+      - precipitating_concentration
+      - synthesis_ph
+      - mixing_rate
+      - mixing_time
+      - mixing_temperature
+      - drying_device
+      - drying_temperature
+      - drying_time
+      - drying_atmosphere
+      - calcination_initial_temperature
+      - calcination_final_temperature
+      - calcination_dwelling_time
+      - number_of_cycles
+      - calcination_gaseous_environment
+      - calcination_heating_rate
+      - calcination_gas_flow_rate
+      - order_of_addition
+      - filtration
+      - purification
+      - aging_temperature
+      - aging_time
+
+  SolGel:
+    is_a: PreparationMethod
+    class_uri: catcore:SolGel
+    description: Sol-gel method for catalyst preparation
+    slots:
+      - hydrolysis_ratio
+      - aging_time
+      - drying
+      - surfactant_template
+
+  Solvothermal:
+    is_a: PreparationMethod
+    class_uri: catcore:Solvothermal
+    description: Solvothermal method for catalyst preparation
+    slots:
+      - filling_volume
+      - synthesis_temperature
+      - synthesis_duration
+      - vessel_type
+      - equipment
+      - stirring_speed
+      - stirrer_type
+      - cooling_rate
+
+  PlasmaAssisted:
+    is_a: PreparationMethod
+    class_uri: catcore:PlasmaAssisted
+    description: Plasma-assisted method for catalyst preparation
+    slots:
+      - plasma_type
+      - equipment
+      - atmosphere
+      - power_input
+      - exposure_time
+      - synthesis_pressure
+      - synthesis_temperature
+
+  CombustionSynthesis:
+    is_a: PreparationMethod
+    class_uri: catcore:CombustionSynthesis
+    description: Combustion synthesis method for catalyst preparation
+    slots:
+      - fuel
+      - oxidizer
+      - fuel_to_oxidizer_ratio
+      - set_temperature
+      - post_treatment
+      - atmosphere
+      - vessel_type
+      - equipment
+
+  AtomicLayerDeposition:
+    is_a: PreparationMethod
+    class_uri: catcore:AtomicLayerDeposition
+    description: Atomic layer deposition method for catalyst preparation
+    slots:
+      - substrate
+      - pulse_time
+      - purging_duration
+      - number_of_cycles
+      - deposition_temperature
+      - carrier_gas
+
+  DepositionPrecipitation:
+    is_a: PreparationMethod
+    class_uri: catcore:DepositionPrecipitation
+    description: Deposition-precipitation method for catalyst preparation
+    slots:
+      - precipitating_agent
+      - synthesis_ph
+      - deposition_temperature
+      - deposition_time
+      - mixing_rate
+      - mixing_time
+      - mixing_temperature
+      - drying_device
+      - drying_temperature
+      - drying_time
+      - drying_atmosphere
+      - calcination_initial_temperature
+      - calcination_final_temperature
+      - calcination_dwelling_time
+      - number_of_cycles
+      - calcination_gaseous_environment
+      - calcination_heating_rate
+      - calcination_gas_flow_rate
+      - order_of_addition
+      - filtration
+      - purification
+      - aging_temperature
+      - aging_time
+
+  MicrowaveAssisted:
+    is_a: PreparationMethod
+    class_uri: catcore:MicrowaveAssisted
+    description: Microwave-assisted method for catalyst preparation
+    slots:
+      - equipment
+      - power
+      - synthesis_duration
+      - synthesis_temperature
+      - microwave_frequency
+      - vessel_type
+
+  SonochemicalSynthesis:
+    is_a: PreparationMethod
+    class_uri: catcore:SonochemicalSynthesis
+    description: Sonochemical synthesis method for catalyst preparation
+    slots:
+      - stirring_duration
+      - sonication_power
+      - sonication_duration
+      - temperature
+      - drying_device
+      - drying_temperature
+      - drying_time
+      - drying_atmosphere
+      - calcination_initial_temperature
+      - calcination_final_temperature
+      - calcination_dwelling_time
+      - number_of_cycles
+      - calcination_gaseous_environment
+      - calcination_heating_rate
+      - calcination_gas_flow_rate
+
+  FlameSprayPyrolysis:
+    is_a: PreparationMethod
+    class_uri: voc4cat:0007031
+    description: Flame spray pyrolysis method for catalyst preparation
+    slots:
+      - flame_type
+      - flow_rate
+      - inlet_system
+      - flame_ring
+      - dispersant
+      - capillary_pressure
+      - fuel_dispersant_ratio
+      - filtration_device
+      - filter_type
+
+  MechanochemicalSynthesis:
+    is_a: PreparationMethod
+    class_uri: catcore:MechanochemicalSynthesis
+    description: Mechanochemical synthesis method for catalyst preparation
+    slots:
+      - equipment
+      - vessel_volume
+      - size_and_material
+      - milling_speed
+      - milling_duration
+      - synthesis_temperature
+      - atmosphere
+      - ball_material
+      - ball_size
+      - ball_to_powder_ratio
+
+  Sublimation:
+    is_a: PreparationMethod
+    class_uri: catcore:Sublimation
+    description: Sublimation method for catalyst preparation
+    slots:
+      - temperature
+      - synthesis_pressure
+      - synthesis_duration
+
+  MolecularSynthesis:
+    is_a: PreparationMethod
+    class_uri: catcore:MolecularSynthesis
+    description: Molecular synthesis method for catalyst preparation
+    slots:
+      - atmosphere
+      - synthesis_duration
+      - reaction_vessel
+      - mixing_device
+      - stirring_duration
+      - stirring_speed
+      - mixing_temperature
+      - filtration_device
+      - filter_type
+      - crystallisation_solvents
+      - precipitation_agent
+      - crystallisation_duration
+      - purification_solvent
+      - number_of_cycles
+      - drying_device
+      - drying_temperature
+      - temperature_ramp
+      - drying_time
+
+  ExsolutionSynthesis:
+    is_a: PreparationMethod
+    class_uri: catcore:ExsolutionSynthesis
+    description: Exsolution synthesis method for catalyst preparation
+    slots:
+      - calcination_initial_temperature
+      - calcination_final_temperature
+      - calcination_dwelling_time
+      - calcination_gaseous_environment
+      - calcination_heating_rate
+      - calcination_gas_flow_rate
+
+  # ==================== CHARACTERIZATION ====================
+  
+  Characterization:
+    is_a: CatCoreEntity
+    description: |-
+      The data class 'Characterization' describes the minimum information which should be 
+      reported with research data to describe the nature of the catalyst.
+    slots:
+      - equipment
+      - characterization_technique
+      - sample_state
+      - sample_description
+      - detector_type
+      - sample_preparation
+      - sample_pretreatment
+    slot_usage:
+      equipment:
+        required: true
+      characterization_technique:
+        required: true
+
+  CharacterizationTechnique:
+    is_a: CatCoreEntity
+    description: Characterization technique used for catalyst analysis
+    abstract: true
+
+  PowderXRD:
+    is_a: CharacterizationTechnique
+    class_uri: CHMO:0000158
+    description: Powder X-ray diffraction
+    slots:
+      - xray_source
+      - atmosphere
+      - operation_mode
+      - minimum_2theta
+      - maximum_2theta
+      - step_size
+      - monochromator
+      - temperature
+      - sample_spinning_speed
+      - experiment_duration
+
+  XRayAbsorptionSpectroscopy:
+    is_a: CharacterizationTechnique
+    class_uri: voc4cat:0000286
+    description: X-ray absorption spectroscopy
+    slots:
+      - operation_mode
+      - element_analyzed
+      - absorption_edge
+      - monochromator
+      - minimum_energy
+      - maximum_energy
+      - energy_resolution
+      - temperature
+      - beamline_source
+      - noise_of_measurement
+      - number_of_cycles
+
+  InfraredSpectroscopy:
+    is_a: CharacterizationTechnique
+    class_uri: catcore:InfraredSpectroscopy
+    description: Infrared spectroscopy
+    slots:
+      - operation_mode
+      - minimum_wavenumber
+      - maximum_wavenumber
+      - step_size
+      - temperature
+      - background_correction
+      - number_of_scans
+      - atmosphere
+
+  RamanSpectroscopy:
+    is_a: CharacterizationTechnique
+    class_uri: voc4cat:0000069
+    description: Raman spectroscopy
+    slots:
+      - excitation_laser_wavelength
+      - excitation_laser_power
+      - magnification_setting
+      - integration_time
+      - number_of_scans
+      - atmosphere
+      - temperature
+      - filter_or_grating
+
+  GCMS:
+    is_a: CharacterizationTechnique
+    class_uri: CHMO:0000497
+    description: Gas chromatography-mass spectrometry
+    slots:
+      - external_standard
+      - internal_standard
+      - column_type
+      - carrier_gas
+      - carrier_gas_purity
+      - inlet_temperature
+      - minimum_oven_temperature
+      - maximum_oven_temperature
+      - heating_ramp
+      - heating_procedure
+      - acquisition_mode
+      - solvent_delay
+      - trace_ion_detection
+      - mz_minimum
+      - mz_maximum
+      - split_ratio
+      - injection_volume
+
+  NMRSpectroscopy:
+    is_a: CharacterizationTechnique
+    class_uri: voc4cat:0000073
+    description: Nuclear magnetic resonance spectroscopy
+    slots:
+      - nucleus
+      - solvent
+      - irradiation_frequency
+      - temperature
+      - nmr_pulse_sequence
+      - nmr_sample_tube
+      - number_of_scans
+      - atmosphere
+
+  TransmissionElectronMicroscopy:
+    is_a: CharacterizationTechnique
+    class_uri: voc4cat:0000078
+    description: Transmission electron microscopy
+    slots:
+      - operation_mode
+      - gun_type
+      - acceleration_voltage
+      - magnification_setting
+
+  ICPAES:
+    is_a: CharacterizationTechnique
+    class_uri: CHMO:0000267
+    description: Inductively-coupled plasma atomic emission spectroscopy
+    slots:
+      - element_analyzed
+      - calibration_method
+      - detection_limit
+      - matrix_effect_correction
+
+  ScanningElectronMicroscopy:
+    is_a: CharacterizationTechnique
+    class_uri: voc4cat:0000075
+    description: Scanning electron microscopy
+    slots:
+      - gun_type
+      - acceleration_voltage
+      - image_resolution
+      - field_emitter
+
+  Thermogravimetry:
+    is_a: CharacterizationTechnique
+    class_uri: CHMO:0000690
+    description: Thermogravimetry
+    slots:
+      - operation_mode
+      - atmosphere
+      - initial_temperature
+      - final_temperature
+      - heating_rate
+      - heating_procedure
+      - sample_mass
+
+  XPS:
+    is_a: CharacterizationTechnique
+    class_uri: CHMO:0000404
+    description: X-ray photoelectron spectroscopy
+    slots:
+      - xray_source
+      - total_acquisition_time
+      - number_of_scans
+      - spot_size
+      - lense_mode
+      - minimum_energy
+      - maximum_energy
+      - step_size
+      - pass_energy
+      - charge_compensation
+      - atmosphere
+
+  BET:
+    is_a: CharacterizationTechnique
+    class_uri: catcore:BET
+    description: Brunauer-Emmett-Teller surface area analysis
+    slots:
+      - adsorbate_gas
+      - degassing_temperature
+      - measurement_temperature
+      - pore_size_distribution_method
+      - sample_mass
+
+  ElementalAnalysis:
+    is_a: CharacterizationTechnique
+    class_uri: CHMO:0001075
+    description: Elemental analysis
+    slots:
+      - elements_analyzed
+      - combustion_temperature
+      - carrier_gas
+
+  UVVisSpectroscopy:
+    is_a: CharacterizationTechnique
+    class_uri: voc4cat:0000079
+    description: Ultraviolet-visible spectroscopy
+    slots:
+      - minimum_wavelength
+      - maximum_wavelength
+      - path_length
+      - solvent
+      - concentration
+
+  DRIFTS:
+    is_a: CharacterizationTechnique
+    class_uri: CHMO:0000645
+    description: Diffuse reflectance infrared Fourier transform spectroscopy
+    slots:
+      - adsorption_gas
+      - atmosphere
+      - flow_rate
+      - diluting_reference
+      - ratio_reference_sample
+      - step_size
+      - resolution
+      - background_correction_method
+      - temperature
+      - number_of_scans
+
+  CyclicVoltammetry:
+    is_a: CharacterizationTechnique
+    class_uri: CHMO:0000025
+    description: Cyclic voltammetry
+    slots:
+      - scan_rate
+      - minimum_potential
+      - maximum_potential
+      - step_size_potential
+      - electrolyte_composition
+      - electrolyte_concentration
+      - reference_electrode
+      - number_of_cycles
+      - working_electrode
+      - counter_electrode
+      - atmosphere
+      - temperature
+
+  DynamicLightScattering:
+    is_a: CharacterizationTechnique
+    class_uri: CHMO:0000167
+    description: Dynamic light scattering
+    slots:
+      - solvent
+      - concentration
+      - light_wavelength
+      - scattering_angle
+      - refractive_index
+      - temperature
+      - dispersant
+      - measurement_duration
+
+  ESI_MS:
+    is_a: CharacterizationTechnique
+    class_uri: CHMO:0000482
+    description: Electrospray ionisation mass spectrometry
+    slots:
+      - operation_mode
+      - mz_minimum
+      - mz_maximum
+      - spray_voltage
+      - capillary_temperature
+      - solvent_composition
+      - flow_rate
+      - carrier_gas
+      - concentration
+
+  PhotoluminescenceSpectroscopy:
+    is_a: CharacterizationTechnique
+    class_uri: catcore:PhotoluminescenceSpectroscopy
+    description: Photoluminescence spectroscopy
+    slots:
+      - excitation_wavelength
+      - emission_wavelength
+      - optical_filter
+      - temperature
+      - emission_range
+      - slit_width
+      - step_size
+      - integration_time
+
+  PhotoluminescenceLifetime:
+    is_a: CharacterizationTechnique
+    class_uri: catcore:PhotoluminescenceLifetime
+    description: Photoluminescence lifetime measurement
+    slots:
+      - excitation_wavelength
+      - emission_wavelength
+      - optical_filter
+      - temperature
+      - lifetime_fitting_model
+      - number_of_shots
+
+  SizeExclusionChromatography:
+    is_a: CharacterizationTechnique
+    class_uri: AFP:0000843
+    description: Size-exclusion chromatography
+    slots:
+      - column_type
+      - temperature
+      - eluent
+      - flow_rate
+      - calibration_standard
+      - injection_volume
+
+  HPLC_MS:
+    is_a: CharacterizationTechnique
+    class_uri: CHMO:0000796
+    description: High-performance liquid chromatography mass spectrometry
+    slots:
+      - column_type
+      - eluent
+      - gradient_program
+      - ionization_mode
+      - temperature
+      - flow_rate
+      - injection_volume
+      - external_standard
+      - internal_standard
+
+  SingleCrystalXRD:
+    is_a: CharacterizationTechnique
+    class_uri: CHMO:0000852
+    description: Single crystal X-ray diffraction
+    slots:
+      - xray_source
+      - temperature
+
+  EDX:
+    is_a: CharacterizationTechnique
+    class_uri: CHMO:0000309
+    description: Energy-dispersive X-ray emission spectroscopy
+    slots:
+      - primary_energy
+      - counting_time
+      - resolution
+      - calibration_method
+
+  TPO:
+    is_a: CharacterizationTechnique
+    class_uri: CHMO:0002907
+    description: Temperature-programmed oxidation
+    slots:
+      - oxidizing_gas_composition
+      - heating_rate
+      - minimum_temperature
+      - maximum_temperature
+
+  TPR:
+    is_a: CharacterizationTechnique
+    class_uri: CHMO:0002908
+    description: Temperature-programmed reduction
+    slots:
+      - reducing_gas_composition
+      - heating_rate
+      - minimum_temperature
+      - maximum_temperature
+
+  ConductivityMeasurement:
+    is_a: CharacterizationTechnique
+    class_uri: catcore:ConductivityMeasurement
+    description: Conductivity measurement
+    slots:
+      - temperature
+      - electrode_configuration
+      - frequency
+      - ac_dc_mode
+      - sample_geometry
+
+  # ==================== REACTION ====================
+  
+  Reaction:
+    is_a: CatCoreEntity
+    description: |-
+      The data class 'Reaction' describes the minimum information which should be reported 
+      with research data concerning the reaction for which the catalyst is applied.
+    slots:
+      - catalyst_quantity
+      - reactor_design_type
+      - reactant
+      - operation_parameters
+      - product_identification_method
+      - catalyst_type
+    slot_usage:
+      catalyst_quantity:
+        required: true
+      reactor_design_type:
+        required: true
+      reactant:
+        required: true
+      operation_parameters:
+        required: true
+      product_identification_method:
+        required: true
+      catalyst_type:
+        required: false
+        recommended: true
+
+  ReactorDesignType:
+    is_a: CatCoreEntity
+    description: Type of reactor design used
+    abstract: true
+
+  ElectrochemicalReactor:
+    is_a: ReactorDesignType
+    class_uri: voc4cat:0000193
+    description: Electrochemical reactor
+
+  CSTR:
+    is_a: ReactorDesignType
+    class_uri: voc4cat:0007019
+    description: Continuous stirred tank reactor
+
+  PlugFlowReactor:
+    is_a: ReactorDesignType
+    class_uri: voc4cat:0007102
+    description: Plug flow reactor model
+
+  Autoclave:
+    is_a: ReactorDesignType
+    class_uri: NCIT:C93052
+    description: Autoclave reactor
+
+  SlurryReactor:
+    is_a: ReactorDesignType
+    class_uri: catcore:SlurryReactor
+    description: Slurry reactor
+
+  Microreactor:
+    is_a: ReactorDesignType
+    class_uri: voc4cat:0000234
+    description: Microreactor
+
+  FixedBedReactor:
+    is_a: ReactorDesignType
+    class_uri: catcore:FixedBedReactor
+    description: Fixed bed reactor
+
+  FluidizedBedReactor:
+    is_a: ReactorDesignType
+    class_uri: catcore:FluidizedBedReactor
+    description: Fluidized bed reactor
+    slots:
+      - gas_distributor_type
+      - bed_expansion_height
+      - bubble_size_distribution
+
+  OperationParameters:
+    is_a: CatCoreEntity
+    description: Operation parameters for the reaction
+    slots:
+      - reactor_temperature_range
+      - atmosphere
+      - experiment_pressure
+      - feed_composition_range
+      - experiment_duration
+
+  ProductIdentificationMethod:
+    is_a: CatCoreEntity
+    description: Method used for product identification
+    abstract: true
+
+  # ==================== SIMULATION ====================
+  
+  Simulation:
+    is_a: CatCoreEntity
+    description: |-
+      The data class 'Simulation' describes the minimum information which should be reported 
+      with research data for conducting simulations in the field of catalysis.
+    slots:
+      - software_package
+      - simulation_method
+      - calculated_property
+    slot_usage:
+      software_package:
+        required: true
+      simulation_method:
+        required: true
+      calculated_property:
+        required: true
+
+  SimulationMethod:
+    is_a: CatCoreEntity
+    description: Simulation method used
+    abstract: true
+
+  DFT:
+    is_a: SimulationMethod
+    class_uri: catcore:DFT
+    description: Density functional theory
+    slots:
+      - exchange_correlation_functional
+      - energy_cutoff
+      - convergence_criteria
+      - dft_u_parameters
+      - spin_polarization
+      - total_energy_per_atom
+
+  MolecularDynamics:
+    is_a: SimulationMethod
+    class_uri: NCIT:C18097
+    description: Molecular dynamics
+    slots:
+      - force_field
+      - simulation_timestep
+      - simulation_time
+      - ensemble_type
+      - number_of_atoms
+
+  Microkinetics:
+    is_a: SimulationMethod
+    class_uri: catcore:Microkinetics
+    description: Microkinetics simulation
+    slots:
+      - rate_constants
+      - solver_type
+      - temperature
+      - pressure
+      - surface_coverage
+      - activation_energy
+
+  MonteCarlo:
+    is_a: SimulationMethod
+    class_uri: catcore:MonteCarlo
+    description: Monte Carlo simulation
+    slots:
+      - interaction_potential
+      - number_of_steps
+      - temperature
+      - lattice_size_type
+      - acceptance_criteria
+      - equilibration_steps
+      - sampling_interval
+
+  CalculatedProperty:
+    is_a: CatCoreEntity
+    description: Property calculated from simulation
+    abstract: true
+
+  ThermodynamicStability:
+    is_a: CalculatedProperty
+    class_uri: catcore:ThermodynamicStability
+    description: Thermodynamic stability property
+    slots:
+      - formation_energy
+      - reference_energies
+      - energy_above_hull
+      - phase_diagram_type
+      - competing_phases
+
+  Piezoelectricity:
+    is_a: CalculatedProperty
+    class_uri: catcore:Piezoelectricity
+    description: Piezoelectricity property
+    slots:
+      - piezoelectric_tensor
+      - crystal_symmetry
+      - strain_applied
+      - ionic_electronic_contributions
+
+  ElasticConstants:
+    is_a: CalculatedProperty
+    class_uri: catcore:ElasticConstants
+    description: Elastic constants property
+    slots:
+      - elastic_tensor
+      - bulk_modulus
+      - shear_modulus
+      - poisson_ratio
+      - young_modulus
+
+  Surfaces:
+    is_a: CalculatedProperty
+    class_uri: catcore:Surfaces
+    description: Surface property
+    slots:
+      - surface_energy
+      - miller_indices
+      - slab_thickness
+      - vacuum_spacing
+      - surface_termination_method
+
+  DielectricTensors:
+    is_a: CalculatedProperty
+    class_uri: catcore:DielectricTensors
+    description: Dielectric tensors property
+    slots:
+      - material_composition
+      - crystal_structure
+      - energy_cutoff
+      - convergence_criteria
+      - k_point_mesh
+
+  PhononDispersion:
+    is_a: CalculatedProperty
+    class_uri: catcore:PhononDispersion
+    description: Phonon dispersion property
+    slots:
+      - material_composition
+      - crystal_structure
+      - force_constant_method
+      - kq_point_mesh
+      - smearing_parameter
+      - imaginary_modes
+
+  EquationsOfState:
+    is_a: CalculatedProperty
+    class_uri: catcore:EquationsOfState
+    description: Equations of state property
+    slots:
+      - material_composition
+      - crystal_structure
+      - fit_method
+      - energy_cutoff
+      - k_point_mesh
+      - bulk_modulus
+      - pressure_derivative
+      - fit_residuals
+
+  AqueousStability:
+    is_a: CalculatedProperty
+    class_uri: catcore:AqueousStability
+    description: Aqueous stability property
+    slots:
+      - material_composition
+      - crystal_structure
+      - ph_range
+      - potential_range
+      - solvation_model
+      - ionic_strength
+      - temperature
+
+  GrainBoundaries:
+    is_a: CalculatedProperty
+    class_uri: catcore:GrainBoundaries
+    description: Grain boundaries property
+    slots:
+      - material_composition
+      - grain_boundary_plane
+      - misorientation_angle
+      - grain_boundary_energy
+      - simulation_cell_size
+      - gb_excess_volume
+      - gb_structural_units
+      - charge_defect_segregation
+
+  ElectronicStructure:
+    is_a: CalculatedProperty
+    class_uri: catcore:ElectronicStructure
+    description: Electronic structure property
+    slots:
+      - material_composition
+      - crystal_structure
+      - k_point_mesh
+      - energy_cutoff
+      - smearing_method
+      - spin_polarized
+      - band_path
+      - fermi_energy
+
+  Ferroelectrics:
+    is_a: CalculatedProperty
+    class_uri: catcore:Ferroelectrics
+    description: Ferroelectric property
+    slots:
+      - material_composition
+      - crystal_structure
+      - polarization_direction
+      - spontaneous_polarization
+      - reference_structure
+      - switching_barrier
+      - coercive_field
+      - temperature_dependence
+
+  BandGap:
+    is_a: CalculatedProperty
+    class_uri: catcore:BandGap
+    description: Band gap property
+    slots:
+      - material_sample
+      - structure_model
+      - k_point_mesh
+      - smearing_broadening
+      - direct_indirect
+      - experimental_reference
+      - gw_hybrid_correction
+      - excitonic_correction
+
+# ==================== SLOTS ====================
+
+slots:
+
+  # Common slots
+  identifier:
+    description: Unique identifier for the entity
+    range: string
+    slot_uri: catcore:identifier
+    
+  # Cat Core slots
+  catalysis_research_field:
+    description: Field of catalysis research
+    range: CatalysisResearchFieldEnum
+    slot_uri: voc4cat:0000196
+    
+  reaction_type:
+    description: Type of reaction
+    range: string
+    slot_uri: voc4cat:0007010
+    
+  active_site:
+    description: Active site of the catalyst
+    range: string
+    slot_uri: voc4cat:0007006
+    recommended: true
+
+  # Synthesis slots
+  nominal_composition:
+    description: Nominal composition of the catalyst
+    range: string
+    slot_uri: catcore:nominal_composition
+    
+  catalyst_measured_properties:
+    description: Measured properties of the catalyst (e.g., BET, sieve fraction, molar ratio)
+    range: string
+    slot_uri: catcore:catalyst_measured_properties
+    
+  
