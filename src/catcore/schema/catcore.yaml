@@ -3219,13 +3219,20 @@ slots:
       ucum_code: eV
     
   # Sublimation specific slots
+  # synthesis_duration:
+  #   description: Duration of synthesis
+  #   range: float
+  #   slot_uri: voc4cat:0000050
+  #   multivalued: true
+  #   unit:
+  #     ucum_code: h
 
   # Molecular synthesis specific slots  
-  reaction_vessel:
-    description: Vessel used for reaction
-    range: string
-    slot_uri: catcore:reaction_vessel
-    multivalued: true
+  # reaction_vessel:
+  #   description: Vessel used for reaction
+  #   range: string
+  #   slot_uri: catcore:reaction_vessel
+  #   multivalued: true
     
   mixing_device:
     description: Device used for mixing
