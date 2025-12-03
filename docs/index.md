@@ -36,7 +36,13 @@ TODO: Link
 
 ## Interactive diagram
 
-{% include images/metadata_collapsed_charts_all_sheets.html%}
+<iframe
+    src="../assets/metadata_collapsed_charts_all_sheets.html.html"
+    width="100%"
+    height="600"
+    frameborder="0"
+    allowfullscreen
+></iframe>
 
 ## Schema
 
