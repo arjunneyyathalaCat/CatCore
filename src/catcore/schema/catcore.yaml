@@ -1075,7 +1075,7 @@ slots:
     slot_uri: voc4cat:0007006
     recommended: true
 
-  # Synthesis slots
+# ==================== SYNTHESIS SLOTS ====================
   nominal_composition:
     description: Nominal composition of the catalyst
     range: string
@@ -1086,4 +1086,1578 @@ slots:
     range: string
     slot_uri: catcore:catalyst_measured_properties
     
-  
+  # Precursor slots
+  precursor:
+    description: Precursor material used in synthesis
+    range: Precursor
+    slot_uri: catcore:precursor
+    multivalued: true
+    
+  precursor_quantity:
+    description: Quantity of precursor used
+    range: float
+    slot_uri: catcore:precursor_quantity
+    multivalued: true
+    unit:
+      ucum_code: g
+    
+  # Preparation method - general slots
+  preparation_method:
+    description: Method used for catalyst preparation
+    range: PreparationMethod
+    slot_uri: voc4cat:0007016
+    multivalued: true
+    
+  # Impregnation slots
+  impregnation_type:
+    description: Type of impregnation method
+    range: ImpregnationTypeEnum
+    slot_uri: catcore:impregnation_type
+    multivalued: true
+    
+  impregnation_duration:
+    description: Duration of impregnation process
+    range: float
+    slot_uri: catcore:impregnation_duration
+    multivalued: true
+    unit:
+      ucum_code: h
+    
+  impregnation_temperature:
+    description: Temperature during impregnation
+    range: float
+    slot_uri: catcore:impregnation_temperature
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  drying_device:
+    description: Device used for drying
+    range: string
+    slot_uri: catcore:drying_device
+    multivalued: true
+    
+  drying_temperature:
+    description: Temperature during drying
+    range: float
+    slot_uri: catcore:drying_temperature
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  drying_time:
+    description: Duration of drying process
+    range: float
+    slot_uri: catcore:drying_time
+    multivalued: true
+    unit:
+      ucum_code: h
+    
+  drying_atmosphere:
+    description: Atmosphere during drying
+    range: string
+    slot_uri: catcore:drying_atmosphere
+    multivalued: true
+    
+  # Calcination slots
+  calcination_initial_temperature:
+    description: Initial temperature for calcination
+    range: float
+    slot_uri: voc4cat:0000057
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  calcination_final_temperature:
+    description: Final temperature for calcination
+    range: float
+    slot_uri: voc4cat:0000058
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  calcination_dwelling_time:
+    description: Dwelling time at calcination temperature
+    range: float
+    slot_uri: voc4cat:0000060
+    multivalued: true
+    unit:
+      ucum_code: h
+    
+  number_of_cycles:
+    description: Number of cycles in the process
+    range: integer
+    slot_uri: catcore:number_of_cycles
+    multivalued: true
+    
+  calcination_gaseous_environment:
+    description: Gaseous environment during calcination
+    range: string
+    slot_uri: voc4cat:0000055
+    multivalued: true
+    
+  calcination_heating_rate:
+    description: Heating rate during calcination
+    range: float
+    slot_uri: voc4cat:0000059
+    multivalued: true
+    unit:
+      ucum_code: Cel/min
+    
+  calcination_gas_flow_rate:
+    description: Gas flow rate during calcination
+    range: float
+    slot_uri: voc4cat:0000056
+    multivalued: true
+    unit:
+      ucum_code: mL/min
+    
+  # Co-precipitation slots
+  precipitating_agent:
+    description: Agent used for precipitation
+    range: string
+    slot_uri: catcore:precipitating_agent
+    multivalued: true
+    
+  precipitating_concentration:
+    description: Concentration of precipitating agent
+    range: float
+    slot_uri: catcore:precipitating_concentration
+    multivalued: true
+    unit:
+      ucum_code: mol/L
+    
+  synthesis_ph:
+    description: pH during synthesis
+    range: float
+    slot_uri: voc4cat:0000052
+    multivalued: true
+    
+  mixing_rate:
+    description: Rate of mixing
+    range: float
+    slot_uri: catcore:mixing_rate
+    multivalued: true
+    unit:
+      ucum_code: rpm
+    
+  mixing_time:
+    description: Duration of mixing
+    range: float
+    slot_uri: catcore:mixing_time
+    multivalued: true
+    unit:
+      ucum_code: h
+    
+  mixing_temperature:
+    description: Temperature during mixing
+    range: float
+    slot_uri: catcore:mixing_temperature
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  order_of_addition:
+    description: Order in which components are added
+    range: string
+    slot_uri: catcore:order_of_addition
+    multivalued: true
+    
+  filtration:
+    description: Filtration method used
+    range: string
+    slot_uri: catcore:filtration
+    multivalued: true
+    
+  purification:
+    description: Purification method used
+    range: string
+    slot_uri: catcore:purification
+    multivalued: true
+    
+  aging_temperature:
+    description: Temperature during aging
+    range: float
+    slot_uri: catcore:aging_temperature
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  aging_time:
+    description: Duration of aging process
+    range: float
+    slot_uri: catcore:aging_time
+    multivalued: true
+    unit:
+      ucum_code: h
+    
+  # Sol-gel slots
+  hydrolysis_ratio:
+    description: Ratio for hydrolysis
+    range: float
+    slot_uri: catcore:hydrolysis_ratio
+    multivalued: true
+    
+  drying:
+    description: Drying process description
+    range: string
+    slot_uri: catcore:drying
+    multivalued: true
+    
+  surfactant_template:
+    description: Surfactant template used
+    range: string
+    slot_uri: catcore:surfactant_template
+    multivalued: true
+    
+  # Solvothermal slots
+  filling_volume:
+    description: Filling volume of vessel
+    range: float
+    slot_uri: catcore:filling_volume
+    multivalued: true
+    unit:
+      ucum_code: mL
+    
+  synthesis_temperature:
+    description: Temperature during synthesis
+    range: float
+    slot_uri: voc4cat:0000051
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  synthesis_duration:
+    description: Duration of synthesis
+    range: float
+    slot_uri: voc4cat:0000050
+    multivalued: true
+    unit:
+      ucum_code: h
+    
+  vessel_type:
+    description: Type of vessel used
+    range: string
+    slot_uri: catcore:vessel_type
+    multivalued: true
+    
+  equipment:
+    description: Equipment used
+    range: string
+    slot_uri: voc4cat:0000187
+    multivalued: true
+    
+  stirring_speed:
+    description: Speed of stirring
+    range: float
+    slot_uri: catcore:stirring_speed
+    multivalued: true
+    unit:
+      ucum_code: rpm
+    
+  stirrer_type:
+    description: Type of stirrer used
+    range: string
+    slot_uri: catcore:stirrer_type
+    multivalued: true
+    
+  cooling_rate:
+    description: Rate of cooling
+    range: float
+    slot_uri: catcore:cooling_rate
+    multivalued: true
+    unit:
+      ucum_code: Cel/min
+    
+  # Plasma-assisted slots
+  plasma_type:
+    description: Type of plasma used
+    range: string
+    slot_uri: catcore:plasma_type
+    multivalued: true
+    
+  atmosphere:
+    description: Atmospheric conditions
+    range: string
+    slot_uri: catcore:atmosphere
+    multivalued: true
+    
+  power_input:
+    description: Power input for the process
+    range: float
+    slot_uri: catcore:power_input
+    multivalued: true
+    unit:
+      ucum_code: W
+    
+  exposure_time:
+    description: Time of exposure
+    range: float
+    slot_uri: catcore:exposure_time
+    multivalued: true
+    unit:
+      ucum_code: min
+    
+  synthesis_pressure:
+    description: Pressure during synthesis
+    range: float
+    slot_uri: voc4cat:0000053
+    multivalued: true
+    unit:
+      ucum_code: bar
+    
+  # Combustion synthesis slots
+  fuel:
+    description: Fuel used in combustion
+    range: string
+    slot_uri: catcore:fuel
+    multivalued: true
+    
+  oxidizer:
+    description: Oxidizer used
+    range: string
+    slot_uri: catcore:oxidizer
+    multivalued: true
+    
+  fuel_to_oxidizer_ratio:
+    description: Ratio of fuel to oxidizer
+    range: float
+    slot_uri: catcore:fuel_to_oxidizer_ratio
+    multivalued: true
+    
+  set_temperature:
+    description: Set temperature for the process
+    range: float
+    slot_uri: catcore:set_temperature
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  post_treatment:
+    description: Post-treatment process
+    range: string
+    slot_uri: catcore:post_treatment
+    multivalued: true
+    
+  # Atomic layer deposition slots
+  substrate:
+    description: Substrate material
+    range: string
+    slot_uri: voc4cat:0000024
+    multivalued: true
+    
+  pulse_time:
+    description: Pulse time for deposition
+    range: float
+    slot_uri: catcore:pulse_time
+    multivalued: true
+    unit:
+      ucum_code: s
+    
+  purging_duration:
+    description: Duration of purging
+    range: float
+    slot_uri: voc4cat:0000112
+    multivalued: true
+    unit:
+      ucum_code: s
+    
+  deposition_temperature:
+    description: Temperature during deposition
+    range: float
+    slot_uri: catcore:deposition_temperature
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  carrier_gas:
+    description: Carrier gas used
+    range: string
+    slot_uri: catcore:carrier_gas
+    multivalued: true
+    
+  # Deposition-precipitation slots
+  deposition_time:
+    description: Time for deposition
+    range: float
+    slot_uri: catcore:deposition_time
+    multivalued: true
+    unit:
+      ucum_code: h
+    
+  # Microwave-assisted slots
+  power:
+    description: Power setting
+    range: float
+    slot_uri: catcore:power
+    multivalued: true
+    unit:
+      ucum_code: W
+    
+  microwave_frequency:
+    description: Frequency of microwave
+    range: float
+    slot_uri: catcore:microwave_frequency
+    multivalued: true
+    unit:
+      ucum_code: GHz
+    
+  # Sonochemical synthesis slots
+  stirring_duration:
+    description: Duration of stirring
+    range: float
+    slot_uri: catcore:stirring_duration
+    multivalued: true
+    unit:
+      ucum_code: h
+    
+  sonication_power:
+    description: Power of sonication
+    range: float
+    slot_uri: catcore:sonication_power
+    multivalued: true
+    unit:
+      ucum_code: W
+    
+  sonication_duration:
+    description: Duration of sonication
+    range: float
+    slot_uri: catcore:sonication_duration
+    multivalued: true
+    unit:
+      ucum_code: min
+    
+  temperature:
+    description: Temperature
+    range: float
+    slot_uri: AFR:0001584
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  # Flame spray pyrolysis slots
+  flame_type:
+    description: Type of flame used
+    range: string
+    slot_uri: catcore:flame_type
+    multivalued: true
+    
+  flow_rate:
+    description: Flow rate
+    range: float
+    slot_uri: catcore:flow_rate
+    multivalued: true
+    unit:
+      ucum_code: mL/min
+    
+  inlet_system:
+    description: Inlet system configuration
+    range: string
+    slot_uri: catcore:inlet_system
+    multivalued: true
+    
+  flame_ring:
+    description: Flame ring configuration
+    range: string
+    slot_uri: catcore:flame_ring
+    multivalued: true
+    
+  dispersant:
+    description: Dispersant used
+    range: string
+    slot_uri: catcore:dispersant
+    multivalued: true
+    
+  capillary_pressure:
+    description: Capillary pressure
+    range: float
+    slot_uri: catcore:capillary_pressure
+    multivalued: true
+    unit:
+      ucum_code: bar
+    
+  fuel_dispersant_ratio:
+    description: Ratio of fuel to dispersant
+    range: float
+    slot_uri: catcore:fuel_dispersant_ratio
+    multivalued: true
+    
+  filtration_device:
+    description: Device used for filtration
+    range: string
+    slot_uri: catcore:filtration_device
+    multivalued: true
+    
+  filter_type:
+    description: Type of filter used
+    range: string
+    slot_uri: catcore:filter_type
+    multivalued: true
+    
+  # Mechanochemical synthesis slots
+  vessel_volume:
+    description: Volume of vessel
+    range: float
+    slot_uri: catcore:vessel_volume
+    multivalued: true
+    unit:
+      ucum_code: mL
+    
+  size_and_material:
+    description: Size and material of components
+    range: string
+    slot_uri: catcore:size_and_material
+    multivalued: true
+    
+  milling_speed:
+    description: Speed of milling
+    range: float
+    slot_uri: catcore:milling_speed
+    multivalued: true
+    unit:
+      ucum_code: rpm
+    
+  milling_duration:
+    description: Duration of milling
+    range: float
+    slot_uri: catcore:milling_duration
+    multivalued: true
+    unit:
+      ucum_code: h
+    
+  ball_material:
+    description: Material of milling balls
+    range: string
+    slot_uri: catcore:ball_material
+    multivalued: true
+    
+  ball_size:
+    description: Size of milling balls
+    range: float
+    slot_uri: catcore:ball_size
+    multivalued: true
+    unit:
+      ucum_code: mm
+    
+  ball_to_powder_ratio:
+    description: Ratio of ball to powder
+    range: float
+    slot_uri: catcore:ball_to_powder_ratio
+    multivalued: true
+    
+  # Molecular synthesis slots
+  reaction_vessel:
+    description: Vessel used for reaction
+    range: string
+    slot_uri: catcore:reaction_vessel
+    multivalued: true
+    
+  mixing_device:
+    description: Device used for mixing
+    range: string
+    slot_uri: catcore:mixing_device
+    multivalued: true
+    
+  crystallisation_solvents:
+    description: Solvents used for crystallisation
+    range: string
+    slot_uri: catcore:crystallisation_solvents
+    multivalued: true
+    
+  precipitation_agent:
+    description: Agent used for precipitation
+    range: string
+    slot_uri: catcore:precipitation_agent
+    multivalued: true
+    
+  crystallisation_duration:
+    description: Duration of crystallisation
+    range: float
+    slot_uri: catcore:crystallisation_duration
+    multivalued: true
+    unit:
+      ucum_code: h
+    
+  purification_solvent:
+    description: Solvent used for purification
+    range: string
+    slot_uri: catcore:purification_solvent
+    multivalued: true
+    
+  temperature_ramp:
+    description: Temperature ramp rate
+    range: float
+    slot_uri: catcore:temperature_ramp
+    multivalued: true
+    unit:
+      ucum_code: Cel/min
+    
+  # Storage and support slots
+  storage_conditions:
+    description: Conditions for storage
+    range: string
+    slot_uri: catcore:storage_conditions
+    multivalued: true
+    
+  support:
+    description: Support material
+    range: string
+    slot_uri: catcore:support
+    multivalued: true
+    
+  support_preparation:
+    description: Preparation of support material
+    range: string
+    slot_uri: catcore:support_preparation
+    multivalued: true
+    
+  # Solvent slots
+  solvent:
+    description: Solvent used
+    range: string
+    slot_uri: voc4cat:0007246
+    multivalued: true
+    
+  solvent_quantity:
+    description: Quantity of solvent
+    range: float
+    slot_uri: catcore:solvent_quantity
+    multivalued: true
+    unit:
+      ucum_code: mL
+    
+  # Sample pre-treatment slots (Synthesis)
+  sample_pretreatment:
+    description: Pre-treatment of sample
+    range: string
+    slot_uri: voc4cat:0000122
+    multivalued: true
+    
+  heating_procedure:
+    description: Heating procedure used
+    range: string
+    slot_uri: catcore:heating_procedure
+    multivalued: true
+
+# ==================== CHARACTERIZATION SLOTS ====================
+
+  # General characterization slots
+  characterization_technique:
+    description: Technique used for characterization
+    range: CharacterizationTechnique
+    slot_uri: voc4cat:0000066
+    multivalued: true
+    
+  sample_state:
+    description: State of the sample
+    range: SampleStateEnum
+    slot_uri: catcore:sample_state
+    multivalued: true
+    
+  sample_description:
+    description: Description of the sample
+    range: string
+    slot_uri: catcore:sample_description
+    multivalued: true
+    
+  detector_type:
+    description: Type of detector used
+    range: string
+    slot_uri: AFR:0000317
+    multivalued: true
+    
+  # Sample preparation slots
+  sample_preparation:
+    description: Preparation of sample
+    range: string
+    slot_uri: AFP:0001159
+    multivalued: true
+    
+  sample_holder:
+    description: Holder for sample
+    range: string
+    slot_uri: catcore:sample_holder
+    multivalued: true
+    
+# ==================== ADDITIONAL CHARACTERIZATION SLOTS ====================
+
+  # X-ray source slots
+  xray_source:
+    description: X-ray source used
+    range: string
+    slot_uri: OBI:0001138
+    multivalued: true
+    
+  # Operation mode slots
+  operation_mode:
+    description: Operation mode of the instrument
+    range: string
+    slot_uri: voc4cat:0000108
+    multivalued: true
+    
+  # Energy and wavelength slots
+  minimum_2theta:
+    description: Minimum 2-theta angle
+    range: float
+    slot_uri: catcore:minimum_2theta
+    multivalued: true
+    unit:
+      ucum_code: deg
+    
+  maximum_2theta:
+    description: Maximum 2-theta angle
+    range: float
+    slot_uri: catcore:maximum_2theta
+    multivalued: true
+    unit:
+      ucum_code: deg
+    
+  step_size:
+    description: Step size for measurements
+    range: float
+    slot_uri: AFR:0000950
+    multivalued: true
+    
+  monochromator:
+    description: Monochromator type used
+    range: string
+    slot_uri: CHMO:0002120
+    multivalued: true
+    
+  sample_spinning_speed:
+    description: Sample spinning speed
+    range: float
+    slot_uri: catcore:sample_spinning_speed
+    multivalued: true
+    unit:
+      ucum_code: rpm
+    
+  experiment_duration:
+    description: Duration of the experiment
+    range: float
+    slot_uri: AFR:0002455
+    multivalued: true
+    unit:
+      ucum_code: h
+    
+  # XAS specific slots
+  element_analyzed:
+    description: Chemical element being analyzed
+    range: string
+    slot_uri: catcore:element_analyzed
+    multivalued: true
+    
+  absorption_edge:
+    description: Absorption edge measured
+    range: string
+    slot_uri: catcore:absorption_edge
+    multivalued: true
+    
+  minimum_energy:
+    description: Minimum energy value
+    range: float
+    slot_uri: catcore:minimum_energy
+    multivalued: true
+    unit:
+      ucum_code: eV
+    
+  maximum_energy:
+    description: Maximum energy value
+    range: float
+    slot_uri: catcore:maximum_energy
+    multivalued: true
+    unit:
+      ucum_code: eV
+    
+  energy_resolution:
+    description: Energy resolution of the measurement
+    range: float
+    slot_uri: AFR:0000950
+    multivalued: true
+    unit:
+      ucum_code: eV
+    
+  beamline_source:
+    description: Beamline source identification
+    range: string
+    slot_uri: catcore:beamline_source
+    multivalued: true
+    
+  noise_of_measurement:
+    description: Noise level of the measurement
+    range: float
+    slot_uri: catcore:noise_of_measurement
+    multivalued: true
+    
+  # Spectroscopy slots
+  minimum_wavenumber:
+    description: Minimum wavenumber
+    range: float
+    slot_uri: catcore:minimum_wavenumber
+    multivalued: true
+    unit:
+      ucum_code: cm-1
+    
+  maximum_wavenumber:
+    description: Maximum wavenumber
+    range: float
+    slot_uri: catcore:maximum_wavenumber
+    multivalued: true
+    unit:
+      ucum_code: cm-1
+    
+  background_correction:
+    description: Background correction method
+    range: string
+    slot_uri: AFP:0003721
+    multivalued: true
+    
+  number_of_scans:
+    description: Number of scans performed
+    range: integer
+    slot_uri: AFR:0003051
+    multivalued: true
+    
+  # Raman spectroscopy slots
+  excitation_laser_wavelength:
+    description: Excitation laser wavelength
+    range: float
+    slot_uri: AFR:0001594
+    multivalued: true
+    unit:
+      ucum_code: nm
+    
+  excitation_laser_power:
+    description: Excitation laser power
+    range: float
+    slot_uri: AFR:0001595
+    multivalued: true
+    unit:
+      ucum_code: mW
+    
+  magnification_setting:
+    description: Magnification setting
+    range: float
+    slot_uri: AFR:0002226
+    multivalued: true
+    
+  integration_time:
+    description: Integration time
+    range: float
+    slot_uri: AFR:0001671
+    multivalued: true
+    unit:
+      ucum_code: s
+    
+  filter_or_grating:
+    description: Filter or grating used
+    range: string
+    slot_uri: catcore:filter_or_grating
+    multivalued: true  
+# ==================== ADDITIONAL CHARACTERIZATION SLOTS (Continued) ====================
+
+  # GC-MS specific slots
+  external_standard:
+    description: External standard used for calibration
+    range: string
+    slot_uri: catcore:external_standard
+    multivalued: true
+    
+  internal_standard:
+    description: Internal standard used for calibration
+    range: string
+    slot_uri: catcore:internal_standard
+    multivalued: true
+    
+  column_type:
+    description: Type of chromatography column
+    range: string
+    slot_uri: AFR:0002026
+    multivalued: true
+    
+  carrier_gas_purity:
+    description: Purity of carrier gas
+    range: string
+    slot_uri: catcore:carrier_gas_purity
+    multivalued: true
+    
+  inlet_temperature:
+    description: Inlet temperature
+    range: float
+    slot_uri: catcore:inlet_temperature
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  minimum_oven_temperature:
+    description: Minimum oven temperature
+    range: float
+    slot_uri: catcore:minimum_oven_temperature
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  maximum_oven_temperature:
+    description: Maximum oven temperature
+    range: float
+    slot_uri: catcore:maximum_oven_temperature
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  heating_ramp:
+    description: Heating ramp rate
+    range: float
+    slot_uri: catcore:heating_ramp
+    multivalued: true
+    unit:
+      ucum_code: Cel/min
+    
+  acquisition_mode:
+    description: Data acquisition mode
+    range: string
+    slot_uri: catcore:acquisition_mode
+    multivalued: true
+    
+  solvent_delay:
+    description: Solvent delay time
+    range: float
+    slot_uri: catcore:solvent_delay
+    multivalued: true
+    unit:
+      ucum_code: min
+    
+  trace_ion_detection:
+    description: Trace ion detection setting
+    range: string
+    slot_uri: catcore:trace_ion_detection
+    multivalued: true
+    
+  mz_minimum:
+    description: Minimum m/z value
+    range: float
+    slot_uri: AFR:0002652
+    multivalued: true
+    
+  mz_maximum:
+    description: Maximum m/z value
+    range: float
+    slot_uri: AFR:0002653
+    multivalued: true
+    
+  split_ratio:
+    description: Split ratio for injection
+    range: float
+    slot_uri: catcore:split_ratio
+    multivalued: true
+    
+  injection_volume:
+    description: Injection volume
+    range: float
+    slot_uri: AFR:0001577
+    multivalued: true
+    unit:
+      ucum_code: uL
+    
+  # NMR spectroscopy slots
+  nucleus:
+    description: Nucleus being observed
+    range: string
+    slot_uri: catcore:nucleus
+    multivalued: true
+    
+  irradiation_frequency:
+    description: Irradiation frequency
+    range: float
+    slot_uri: nmrCV:1400026
+    multivalued: true
+    unit:
+      ucum_code: MHz
+    
+  nmr_pulse_sequence:
+    description: NMR pulse sequence used
+    range: string
+    slot_uri: nmrCV:1400037
+    multivalued: true
+    
+  nmr_sample_tube:
+    description: NMR sample tube type
+    range: string
+    slot_uri: nmrCV:1400132
+    multivalued: true
+    
+  # Microscopy slots
+  gun_type:
+    description: Type of electron gun
+    range: string
+    slot_uri: catcore:gun_type
+    multivalued: true
+    
+  acceleration_voltage:
+    description: Acceleration voltage
+    range: float
+    slot_uri: catcore:acceleration_voltage
+    multivalued: true
+    unit:
+      ucum_code: kV
+    
+  # ICP-AES slots
+  calibration_method:
+    description: Calibration method used
+    range: string
+    slot_uri: catcore:calibration_method
+    multivalued: true
+    
+  detection_limit:
+    description: Detection limit
+    range: float
+    slot_uri: NCIT:C105701
+    multivalued: true
+    
+  matrix_effect_correction:
+    description: Matrix effect correction method
+    range: string
+    slot_uri: catcore:matrix_effect_correction
+    multivalued: true
+    
+  # SEM slots
+  image_resolution:
+    description: Image resolution
+    range: float
+    slot_uri: catcore:image_resolution
+    multivalued: true
+    unit:
+      ucum_code: nm
+    
+  field_emitter:
+    description: Field emitter type
+    range: string
+    slot_uri: catcore:field_emitter
+    multivalued: true
+    
+  # Thermogravimetry slots
+  initial_temperature:
+    description: Initial temperature
+    range: float
+    slot_uri: NCIT:C164644
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  final_temperature:
+    description: Final temperature
+    range: float
+    slot_uri: NCIT:C164644
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  heating_rate:
+    description: Heating rate
+    range: float
+    slot_uri: catcore:heating_rate
+    multivalued: true
+    unit:
+      ucum_code: Cel/min
+    
+  sample_mass:
+    description: Mass of sample
+    range: float
+    slot_uri: voc4cat:0007038
+    multivalued: true
+    unit:
+      ucum_code: mg
+    
+  # XPS slots
+  total_acquisition_time:
+    description: Total acquisition time
+    range: float
+    slot_uri: catcore:total_acquisition_time
+    multivalued: true
+    unit:
+      ucum_code: s
+    
+  spot_size:
+    description: Spot size for analysis
+    range: float
+    slot_uri: catcore:spot_size
+    multivalued: true
+    unit:
+      ucum_code: mm
+    
+  lense_mode:
+    description: Lens mode setting
+    range: string
+    slot_uri: voc4cat:0000108
+    multivalued: true
+    
+  pass_energy:
+    description: Pass energy setting
+    range: float
+    slot_uri: catcore:pass_energy
+    multivalued: true
+    unit:
+      ucum_code: eV
+    
+  charge_compensation:
+    description: Charge compensation method
+    range: string
+    slot_uri: catcore:charge_compensation
+    multivalued: true
+    
+  # BET slots
+  adsorbate_gas:
+    description: Adsorbate gas used
+    range: string
+    slot_uri: catcore:adsorbate_gas
+    multivalued: true
+    
+  degassing_temperature:
+    description: Degassing temperature
+    range: float
+    slot_uri: catcore:degassing_temperature
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  measurement_temperature:
+    description: Measurement temperature
+    range: float
+    slot_uri: catcore:measurement_temperature
+    multivalued: true
+    unit:
+      ucum_code: K
+    
+  pore_size_distribution_method:
+    description: Method for pore size distribution analysis
+    range: string
+    slot_uri: catcore:pore_size_distribution_method
+    multivalued: true
+    
+  # Elemental analysis slots
+  elements_analyzed:
+    description: Elements analyzed
+    range: string
+    slot_uri: catcore:elements_analyzed
+    multivalued: true
+    
+  combustion_temperature:
+    description: Combustion temperature
+    range: float
+    slot_uri: catcore:combustion_temperature
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  # UV-Vis spectroscopy slots
+  minimum_wavelength:
+    description: Minimum wavelength
+    range: float
+    slot_uri: catcore:minimum_wavelength
+    multivalued: true
+    unit:
+      ucum_code: nm
+    
+  maximum_wavelength:
+    description: Maximum wavelength
+    range: float
+    slot_uri: catcore:maximum_wavelength
+    multivalued: true
+    unit:
+      ucum_code: nm
+    
+  path_length:
+    description: Path length of cell
+    range: float
+    slot_uri: AFQ:0000268
+    multivalued: true
+    unit:
+      ucum_code: cm
+    
+  concentration:
+    description: Concentration of sample
+    range: float
+    slot_uri: voc4cat:0007244
+    multivalued: true
+    unit:
+      ucum_code: mol/L
+    
+  # DRIFTS slots
+  adsorption_gas:
+    description: Adsorption gas used
+    range: string
+    slot_uri: catcore:adsorption_gas
+    multivalued: true
+    
+  diluting_reference:
+    description: Diluting reference material
+    range: string
+    slot_uri: catcore:diluting_reference
+    multivalued: true
+    
+  ratio_reference_sample:
+    description: Ratio of reference to sample
+    range: float
+    slot_uri: catcore:ratio_reference_sample
+    multivalued: true
+    
+  resolution:
+    description: Spectral resolution
+    range: float
+    slot_uri: catcore:resolution
+    multivalued: true
+    unit:
+      ucum_code: cm-1
+# ==================== ADDITIONAL CHARACTERIZATION & REACTION SLOTS ====================
+
+  # DRIFTS and spectroscopy slots (continued)
+  background_correction_method:
+    description: Background correction method used
+    range: string
+    slot_uri: catcore:background_correction_method
+    multivalued: true
+    
+  # Cyclic voltammetry slots
+  scan_rate:
+    description: Scan rate for voltammetry
+    range: float
+    slot_uri: voc4cat:0007213
+    multivalued: true
+    unit:
+      ucum_code: mV/s
+    
+  minimum_potential:
+    description: Minimum potential
+    range: float
+    slot_uri: catcore:minimum_potential
+    multivalued: true
+    unit:
+      ucum_code: V
+    
+  maximum_potential:
+    description: Maximum potential
+    range: float
+    slot_uri: catcore:maximum_potential
+    multivalued: true
+    unit:
+      ucum_code: V
+    
+  step_size_potential:
+    description: Step size for potential
+    range: float
+    slot_uri: voc4cat:0007218
+    multivalued: true
+    unit:
+      ucum_code: mV
+    
+  electrolyte_composition:
+    description: Composition of electrolyte
+    range: string
+    slot_uri: catcore:electrolyte_composition
+    multivalued: true
+    
+  electrolyte_concentration:
+    description: Concentration of electrolyte
+    range: float
+    slot_uri: catcore:electrolyte_concentration
+    multivalued: true
+    unit:
+      ucum_code: mol/L
+    
+  reference_electrode:
+    description: Reference electrode used
+    range: string
+    slot_uri: voc4cat:0007204
+    multivalued: true
+    
+  working_electrode:
+    description: Working electrode used
+    range: string
+    slot_uri: voc4cat:0007202
+    multivalued: true
+    
+  counter_electrode:
+    description: Counter electrode used
+    range: string
+    slot_uri: voc4cat:0007203
+    multivalued: true
+    
+  # Dynamic light scattering slots
+  light_wavelength:
+    description: Light wavelength used
+    range: float
+    slot_uri: voc4cat:0000176
+    multivalued: true
+    unit:
+      ucum_code: nm
+    
+  scattering_angle:
+    description: Scattering angle
+    range: float
+    slot_uri: catcore:scattering_angle
+    multivalued: true
+    unit:
+      ucum_code: deg
+    
+  refractive_index:
+    description: Refractive index
+    range: float
+    slot_uri: catcore:refractive_index
+    multivalued: true
+    
+  measurement_duration:
+    description: Duration of measurement
+    range: float
+    slot_uri: catcore:measurement_duration
+    multivalued: true
+    unit:
+      ucum_code: s
+    
+  # ESI-MS slots
+  spray_voltage:
+    description: Spray voltage for ionization
+    range: float
+    slot_uri: CHMO:0002792
+    multivalued: true
+    unit:
+      ucum_code: kV
+    
+  capillary_temperature:
+    description: Capillary temperature
+    range: float
+    slot_uri: catcore:capillary_temperature
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  solvent_composition:
+    description: Solvent composition
+    range: string
+    slot_uri: voc4cat:0007246
+    multivalued: true
+    
+  # Photoluminescence slots
+  excitation_wavelength:
+    description: Excitation wavelength
+    range: float
+    slot_uri: AFR:0002479
+    multivalued: true
+    unit:
+      ucum_code: nm
+    
+  emission_wavelength:
+    description: Emission wavelength
+    range: float
+    slot_uri: NCIT:C204101
+    multivalued: true
+    unit:
+      ucum_code: nm
+    
+  optical_filter:
+    description: Optical filter used
+    range: string
+    slot_uri: catcore:optical_filter
+    multivalued: true
+    
+  emission_range:
+    description: Emission range measured
+    range: string
+    slot_uri: catcore:emission_range
+    multivalued: true
+    
+  slit_width:
+    description: Slit width setting
+    range: float
+    slot_uri: catcore:slit_width
+    multivalued: true
+    unit:
+      ucum_code: nm
+    
+  lifetime_fitting_model:
+    description: Lifetime fitting model used
+    range: string
+    slot_uri: catcore:lifetime_fitting_model
+    multivalued: true
+    
+  number_of_shots:
+    description: Number of shots for measurement
+    range: integer
+    slot_uri: catcore:number_of_shots
+    multivalued: true
+    
+  # Size exclusion chromatography slots
+  eluent:
+    description: Eluent used
+    range: string
+    slot_uri: AFRL:0000011
+    multivalued: true
+    
+  calibration_standard:
+    description: Calibration standard used
+    range: string
+    slot_uri: catcore:calibration_standard
+    multivalued: true
+    
+  # HPLC-MS slots
+  gradient_program:
+    description: Gradient program for elution
+    range: string
+    slot_uri: catcore:gradient_program
+    multivalued: true
+    
+  ionization_mode:
+    description: Ionization mode used
+    range: string
+    slot_uri: catcore:ionization_mode
+    multivalued: true
+    
+  # EDX slots
+  primary_energy:
+    description: Primary energy of electron beam
+    range: float
+    slot_uri: catcore:primary_energy
+    multivalued: true
+    unit:
+      ucum_code: keV
+    
+  counting_time:
+    description: Counting time for detection
+    range: float
+    slot_uri: catcore:counting_time
+    multivalued: true
+    unit:
+      ucum_code: s
+    
+  # TPO/TPR slots
+  oxidizing_gas_composition:
+    description: Composition of oxidizing gas
+    range: string
+    slot_uri: catcore:oxidizing_gas_composition
+    multivalued: true
+    
+  reducing_gas_composition:
+    description: Composition of reducing gas
+    range: string
+    slot_uri: catcore:reducing_gas_composition
+    multivalued: true
+    
+  minimum_temperature:
+    description: Minimum temperature
+    range: float
+    slot_uri: catcore:minimum_temperature
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  maximum_temperature:
+    description: Maximum temperature
+    range: float
+    slot_uri: catcore:maximum_temperature
+    multivalued: true
+    unit:
+      ucum_code: Cel
+    
+  # Conductivity measurement slots
+  electrode_configuration:
+    description: Configuration of electrodes
+    range: string
+    slot_uri: catcore:electrode_configuration
+    multivalued: true
+    
+  frequency:
+    description: Frequency of measurement
+    range: float
+    slot_uri: voc4cat:0007239
+    multivalued: true
+    unit:
+      ucum_code: Hz
+    
+  ac_dc_mode:
+    description: AC or DC measurement mode
+    range: string
+    slot_uri: catcore:ac_dc_mode
+    multivalued: true
+    
+  sample_geometry:
+    description: Geometry of the sample
+    range: string
+    slot_uri: catcore:sample_geometry
+    multivalued: true
+    
+# ==================== REACTION SLOTS ====================
+
+  # Catalyst and reactor slots
+  catalyst_quantity:
+    description: Quantity of catalyst used
+    range: float
+    slot_uri: catcore:catalyst_quantity
+    multivalued: true
+    unit:
+      ucum_code: g
+    
+  catalyst_type:
+    description: Type of catalyst
+    range: string
+    slot_uri: voc4cat:0007014
+    multivalued: true
+    
+  reactor_design_type:
+    description: Type of reactor design
+    range: ReactorDesignType
+    slot_uri: voc4cat:0007018
+    multivalued: true
+    
+  reactant:
+    description: Reactant used in the reaction
+    range: string
+    slot_uri: voc4cat:0000101
+    multivalued: true
+    
+  # Operation parameters slots
+  operation_parameters:
+    description: Operation parameters for the reaction
+    range: OperationParameters
+    slot_uri: voc4cat:0000142
+    multivalued: true
+    
+  reactor_temperature_range:
+    description: Temperature range in reactor
+    range: string
+    slot_uri: voc4cat:0007032
+    multivalued: true
+    
+  experiment_pressure:
+    description: Pressure during experiment
+    range: float
+    slot_uri: voc4cat:0000118
+    multivalued: true
+    unit:
+      ucum_code: bar
+    
+  feed_composition_range:
+    description: Range of feed composition
+    range: string
+    slot_uri: catcore:feed_composition_range
+    multivalued: true
+    
+  # Product identification slots
+  product_identification_method:
+    description: Method used for product identification
+    range: ProductIdentificationMethod
+    slot_uri: voc4cat:0000129
+    multivalued: true
+    
+  # Fluidized bed reactor specific slots
+  gas_distributor_type:
+    description: Type of gas distributor
+    range: string
+    slot_uri: catcore:gas_distributor_type
+    multivalued: true
+    
+  bed_expansion_height:
+    description: Bed expansion height
+    range: float
+    slot_uri: catcore:bed_expansion_height
+    multivalued: true
+    unit:
+      ucum_code: cm
