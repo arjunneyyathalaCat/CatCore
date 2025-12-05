@@ -9,11 +9,9 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 - **Description:**A short description for Comprehension purposes
 
-- **Range:** Further Aspects which are Important for describing a certain aspect
+- **Data Type:** Further Aspects which are Important for describing a certain aspect
 
 - **Cardinality:** A description how often it is allowed and how important it is to describe a certain aspect
-
-- **Range:** Further Aspects which are Important for describing a certain aspect
 
 - **CURIE:** The Abbreviated form of a URI, where the Prefix, e.g. voc4cat, described to which terminology a Concept belong. The Links are fully implemented here. For reusing these CURIE's you need to substitute the prefix against the URI for it.
 
@@ -24,7 +22,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Quantity of catalyst used
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Required, Multivalued
 
@@ -36,7 +34,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20catalyst_quantity" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -45,7 +43,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Type of reactor design
 
-**Range:** ReactorDesignType
+**Data Type:** ReactorDesignType
 
 **Cardinality:**  Required, Multivalued
 
@@ -53,7 +51,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Schema Reference:** [reactor_design_type](./elements/reactor_design_type.md)
 
-**Range Class Details:**
+**Data Type Class Details:**
 
 <details markdown="1">
 <summary><strong>ReactorDesignType</strong></summary>
@@ -62,13 +60,13 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Type of reactor design used
 
+**Schema Reference:** [ReactorDesignType](./elements/ReactorDesignType.md)
+
 <p>
       <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ReactorDesignType" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
+        💡 Submit Term Feedback
       </a>
-    </p>**Schema Reference:** [ReactorDesignType](./elements/ReactorDesignType.md)
-
-</details>
+    </p></details>
 
 **Possible Subclasses / Enumerations of ReactorDesignType:**
 
@@ -77,116 +75,112 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Electrochemical reactor
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ElectrochemicalReactor" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`voc4cat:0000193`](https://w3id.org/nfdi4cat/voc4cat_0000193)
+**CURIE:** [`voc4cat:0000193`](https://w3id.org/nfdi4cat/voc4cat_0000193)
 
 **Schema Reference:** [ElectrochemicalReactor](./elements/ElectrochemicalReactor.md)
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ElectrochemicalReactor" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>CSTR</strong></summary>
 
 **Description:** Continuous stirred tank reactor
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20CSTR" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`voc4cat:0007019`](https://w3id.org/nfdi4cat/voc4cat_0007019)
+**CURIE:** [`voc4cat:0007019`](https://w3id.org/nfdi4cat/voc4cat_0007019)
 
 **Schema Reference:** [CSTR](./elements/CSTR.md)
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20CSTR" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>PlugFlowReactor</strong></summary>
 
 **Description:** Plug flow reactor model
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20PlugFlowReactor" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`voc4cat:0007102`](https://w3id.org/nfdi4cat/voc4cat_0007102)
+**CURIE:** [`voc4cat:0007102`](https://w3id.org/nfdi4cat/voc4cat_0007102)
 
 **Schema Reference:** [PlugFlowReactor](./elements/PlugFlowReactor.md)
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20PlugFlowReactor" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>Autoclave</strong></summary>
 
 **Description:** Autoclave reactor
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Autoclave" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`NCIT:C93052`](http://purl.obolibrary.org/obo/NCIT_C93052)
+**CURIE:** [`NCIT:C93052`](http://purl.obolibrary.org/obo/NCIT_C93052)
 
 **Schema Reference:** [Autoclave](./elements/Autoclave.md)
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Autoclave" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>SlurryReactor</strong></summary>
 
 **Description:** Slurry reactor
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20SlurryReactor" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:SlurryReactor`](https://w3id.org/nfdi4cat/catcore/SlurryReactor)
+**CURIE:** [`catcore:SlurryReactor`](https://w3id.org/nfdi4cat/catcore/SlurryReactor)
 
 **Schema Reference:** [SlurryReactor](./elements/SlurryReactor.md)
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20SlurryReactor" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>Microreactor</strong></summary>
 
 **Description:** Microreactor
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Microreactor" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`voc4cat:0000234`](https://w3id.org/nfdi4cat/voc4cat_0000234)
+**CURIE:** [`voc4cat:0000234`](https://w3id.org/nfdi4cat/voc4cat_0000234)
 
 **Schema Reference:** [Microreactor](./elements/Microreactor.md)
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Microreactor" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>FixedBedReactor</strong></summary>
 
 **Description:** Fixed bed reactor
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20FixedBedReactor" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:FixedBedReactor`](https://w3id.org/nfdi4cat/catcore/FixedBedReactor)
+**CURIE:** [`catcore:FixedBedReactor`](https://w3id.org/nfdi4cat/catcore/FixedBedReactor)
 
 **Schema Reference:** [FixedBedReactor](./elements/FixedBedReactor.md)
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20FixedBedReactor" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>FluidizedBedReactor</strong></summary>
 
 **Description:** Fluidized bed reactor
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20FluidizedBedReactor" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:FluidizedBedReactor`](https://w3id.org/nfdi4cat/catcore/FluidizedBedReactor)
+**CURIE:** [`catcore:FluidizedBedReactor`](https://w3id.org/nfdi4cat/catcore/FluidizedBedReactor)
 
 **Schema Reference:** [FluidizedBedReactor](./elements/FluidizedBedReactor.md)
 
@@ -197,7 +191,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Type of gas distributor
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -207,7 +201,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20gas_distributor_type" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -216,7 +210,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Bed expansion height
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -228,7 +222,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20bed_expansion_height" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -237,7 +231,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** No description available
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional
 
@@ -245,15 +239,19 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20bubble_size_distribution" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20FluidizedBedReactor" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20reactor_design_type" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -262,7 +260,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Reactant used in the reaction
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Required, Multivalued
 
@@ -272,7 +270,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20reactant" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -281,7 +279,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Operation parameters for the reaction
 
-**Range:** OperationParameters
+**Data Type:** OperationParameters
 
 **Cardinality:**  Required, Multivalued
 
@@ -289,18 +287,14 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Schema Reference:** [operation_parameters](./elements/operation_parameters.md)
 
-**Range Class Details:**
+**Data Type Class Details:**
 
 <details markdown="1">
 <summary><strong>OperationParameters</strong></summary>
 
 **Description:** Operation parameters for the reaction
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20OperationParameters" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**Schema Reference:** [OperationParameters](./elements/OperationParameters.md)
+**Schema Reference:** [OperationParameters](./elements/OperationParameters.md)
 
 **Slots**
 
@@ -309,7 +303,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Temperature range in reactor
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -319,7 +313,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20reactor_temperature_range" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -328,7 +322,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Atmospheric conditions
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -338,7 +332,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20atmosphere" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -347,7 +341,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Pressure during experiment
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -359,7 +353,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20experiment_pressure" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -368,7 +362,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Range of feed composition
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -378,7 +372,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20feed_composition_range" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -387,7 +381,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Duration of the experiment
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -399,15 +393,19 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20experiment_duration" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20OperationParameters" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20operation_parameters" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -416,7 +414,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Method used for product identification
 
-**Range:** ProductIdentificationMethod
+**Data Type:** ProductIdentificationMethod
 
 **Cardinality:**  Required, Multivalued
 
@@ -424,7 +422,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Schema Reference:** [product_identification_method](./elements/product_identification_method.md)
 
-**Range Class Details:**
+**Data Type Class Details:**
 
 <details markdown="1">
 <summary><strong>ProductIdentificationMethod</strong></summary>
@@ -433,17 +431,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Method used for product identification
 
+**Schema Reference:** [ProductIdentificationMethod](./elements/ProductIdentificationMethod.md)
+
 <p>
       <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ProductIdentificationMethod" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
+        💡 Submit Term Feedback
       </a>
-    </p>**Schema Reference:** [ProductIdentificationMethod](./elements/ProductIdentificationMethod.md)
-
-</details>
+    </p></details>
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20product_identification_method" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -452,7 +450,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Type of catalyst
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Recommended, Multivalued
 
@@ -462,7 +460,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20catalyst_type" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 

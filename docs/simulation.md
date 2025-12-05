@@ -9,11 +9,9 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 - **Description:**A short description for Comprehension purposes
 
-- **Range:** Further Aspects which are Important for describing a certain aspect
+- **Data Type:** Further Aspects which are Important for describing a certain aspect
 
 - **Cardinality:** A description how often it is allowed and how important it is to describe a certain aspect
-
-- **Range:** Further Aspects which are Important for describing a certain aspect
 
 - **CURIE:** The Abbreviated form of a URI, where the Prefix, e.g. voc4cat, described to which terminology a Concept belong. The Links are fully implemented here. For reusing these CURIE's you need to substitute the prefix against the URI for it.
 
@@ -24,7 +22,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Software or package used for simulation
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Required, Multivalued
 
@@ -34,7 +32,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20software_package" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -43,7 +41,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Simulation method used
 
-**Range:** SimulationMethod
+**Data Type:** SimulationMethod
 
 **Cardinality:**  Required, Multivalued
 
@@ -51,7 +49,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Schema Reference:** [simulation_method](./elements/simulation_method.md)
 
-**Range Class Details:**
+**Data Type Class Details:**
 
 <details markdown="1">
 <summary><strong>SimulationMethod</strong></summary>
@@ -60,13 +58,13 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Simulation method used
 
+**Schema Reference:** [SimulationMethod](./elements/SimulationMethod.md)
+
 <p>
       <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20SimulationMethod" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
+        💡 Submit Term Feedback
       </a>
-    </p>**Schema Reference:** [SimulationMethod](./elements/SimulationMethod.md)
-
-</details>
+    </p></details>
 
 **Possible Subclasses / Enumerations of SimulationMethod:**
 
@@ -75,11 +73,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Density functional theory
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20DFT" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:DFT`](https://w3id.org/nfdi4cat/catcore/DFT)
+**CURIE:** [`catcore:DFT`](https://w3id.org/nfdi4cat/catcore/DFT)
 
 **Schema Reference:** [DFT](./elements/DFT.md)
 
@@ -90,7 +84,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Exchange-correlation functional used (e.g., PBE, B3LYP)
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -100,7 +94,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20exchange_correlation_functional" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -109,7 +103,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Energy cutoff for plane wave basis
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -121,7 +115,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20energy_cutoff" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -130,7 +124,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Convergence criteria (e.g., energy, force)
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -140,7 +134,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20convergence_criteria" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -149,7 +143,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** DFT+U parameters used
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -159,7 +153,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20dft_u_parameters" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -168,7 +162,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Spin polarization setting
 
-**Range:** boolean
+**Data Type:** boolean
 
 **Cardinality:**  Optional, Multivalued
 
@@ -178,7 +172,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20spin_polarization" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -187,7 +181,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Total energy per atom
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -199,22 +193,22 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20total_energy_per_atom" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20DFT" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>MolecularDynamics</strong></summary>
 
 **Description:** Molecular dynamics
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20MolecularDynamics" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`NCIT:C18097`](http://purl.obolibrary.org/obo/NCIT_C18097)
+**CURIE:** [`NCIT:C18097`](http://purl.obolibrary.org/obo/NCIT_C18097)
 
 **Schema Reference:** [MolecularDynamics](./elements/MolecularDynamics.md)
 
@@ -225,7 +219,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Force field used
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -235,7 +229,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20force_field" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -244,7 +238,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Time step for simulation
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -256,7 +250,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20simulation_timestep" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -265,7 +259,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Total simulation time
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -277,7 +271,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20simulation_time" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -286,7 +280,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Ensemble type (e.g., NVT, NPT)
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -296,7 +290,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ensemble_type" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -305,7 +299,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Number of atoms in simulation
 
-**Range:** integer
+**Data Type:** integer
 
 **Cardinality:**  Optional, Multivalued
 
@@ -315,22 +309,22 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20number_of_atoms" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20MolecularDynamics" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>Microkinetics</strong></summary>
 
 **Description:** Microkinetics simulation
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Microkinetics" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:Microkinetics`](https://w3id.org/nfdi4cat/catcore/Microkinetics)
+**CURIE:** [`catcore:Microkinetics`](https://w3id.org/nfdi4cat/catcore/Microkinetics)
 
 **Schema Reference:** [Microkinetics](./elements/Microkinetics.md)
 
@@ -341,7 +335,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Rate constants or Arrhenius parameters
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -351,7 +345,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20rate_constants" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -360,7 +354,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Type of solver used
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -370,7 +364,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20solver_type" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -379,7 +373,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Temperature
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -391,7 +385,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -400,7 +394,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Pressure in simulation
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -412,7 +406,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20pressure" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -421,7 +415,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Surface coverage of species
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -431,7 +425,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20surface_coverage" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -440,7 +434,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Activation energy for each step
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -452,22 +446,22 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20activation_energy" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Microkinetics" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>MonteCarlo</strong></summary>
 
 **Description:** Monte Carlo simulation
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20MonteCarlo" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:MonteCarlo`](https://w3id.org/nfdi4cat/catcore/MonteCarlo)
+**CURIE:** [`catcore:MonteCarlo`](https://w3id.org/nfdi4cat/catcore/MonteCarlo)
 
 **Schema Reference:** [MonteCarlo](./elements/MonteCarlo.md)
 
@@ -478,7 +472,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Interaction potential used
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -488,7 +482,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20interaction_potential" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -497,7 +491,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Number of Monte Carlo steps
 
-**Range:** integer
+**Data Type:** integer
 
 **Cardinality:**  Optional, Multivalued
 
@@ -507,7 +501,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20number_of_steps" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -516,7 +510,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Temperature
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -528,7 +522,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -537,7 +531,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Lattice size and type
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -547,7 +541,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20lattice_size_type" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -556,7 +550,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Acceptance criteria for Monte Carlo moves
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -566,7 +560,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20acceptance_criteria" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -575,7 +569,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Number of equilibration steps
 
-**Range:** integer
+**Data Type:** integer
 
 **Cardinality:**  Optional, Multivalued
 
@@ -585,7 +579,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20equilibration_steps" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -594,7 +588,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Sampling interval for data collection
 
-**Range:** integer
+**Data Type:** integer
 
 **Cardinality:**  Optional, Multivalued
 
@@ -604,15 +598,19 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20sampling_interval" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20MonteCarlo" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20simulation_method" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -621,7 +619,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Property calculated from simulation
 
-**Range:** CalculatedProperty
+**Data Type:** CalculatedProperty
 
 **Cardinality:**  Required, Multivalued
 
@@ -629,7 +627,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Schema Reference:** [calculated_property](./elements/calculated_property.md)
 
-**Range Class Details:**
+**Data Type Class Details:**
 
 <details markdown="1">
 <summary><strong>CalculatedProperty</strong></summary>
@@ -638,13 +636,13 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Property calculated from simulation
 
+**Schema Reference:** [CalculatedProperty](./elements/CalculatedProperty.md)
+
 <p>
       <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20CalculatedProperty" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
+        💡 Submit Term Feedback
       </a>
-    </p>**Schema Reference:** [CalculatedProperty](./elements/CalculatedProperty.md)
-
-</details>
+    </p></details>
 
 **Possible Subclasses / Enumerations of CalculatedProperty:**
 
@@ -653,11 +651,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Thermodynamic stability property
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ThermodynamicStability" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:ThermodynamicStability`](https://w3id.org/nfdi4cat/catcore/ThermodynamicStability)
+**CURIE:** [`catcore:ThermodynamicStability`](https://w3id.org/nfdi4cat/catcore/ThermodynamicStability)
 
 **Schema Reference:** [ThermodynamicStability](./elements/ThermodynamicStability.md)
 
@@ -668,7 +662,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Formation energy per atom
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -680,7 +674,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20formation_energy" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -689,7 +683,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Reference elemental energies
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -699,7 +693,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20reference_energies" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -708,7 +702,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Energy above convex hull
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -720,7 +714,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20energy_above_hull" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -729,7 +723,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Phase diagram type (e.g., binary, ternary)
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -739,7 +733,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20phase_diagram_type" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -748,7 +742,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Competing phase list
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -758,22 +752,22 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20competing_phases" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ThermodynamicStability" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>Piezoelectricity</strong></summary>
 
 **Description:** Piezoelectricity property
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Piezoelectricity" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:Piezoelectricity`](https://w3id.org/nfdi4cat/catcore/Piezoelectricity)
+**CURIE:** [`catcore:Piezoelectricity`](https://w3id.org/nfdi4cat/catcore/Piezoelectricity)
 
 **Schema Reference:** [Piezoelectricity](./elements/Piezoelectricity.md)
 
@@ -784,7 +778,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Piezoelectric tensor components
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -794,7 +788,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20piezoelectric_tensor" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -803,7 +797,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Crystal symmetry
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -813,7 +807,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_symmetry" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -822,7 +816,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Strain applied
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -832,7 +826,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20strain_applied" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -841,7 +835,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Ionic and electronic contributions
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -851,22 +845,22 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ionic_electronic_contributions" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Piezoelectricity" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>ElasticConstants</strong></summary>
 
 **Description:** Elastic constants property
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ElasticConstants" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:ElasticConstants`](https://w3id.org/nfdi4cat/catcore/ElasticConstants)
+**CURIE:** [`catcore:ElasticConstants`](https://w3id.org/nfdi4cat/catcore/ElasticConstants)
 
 **Schema Reference:** [ElasticConstants](./elements/ElasticConstants.md)
 
@@ -877,7 +871,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Elastic tensor components
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -887,7 +881,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20elastic_tensor" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -896,7 +890,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Bulk modulus
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -908,7 +902,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20bulk_modulus" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -917,7 +911,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Shear modulus
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -929,7 +923,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20shear_modulus" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -938,7 +932,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Poisson's ratio
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -948,7 +942,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20poisson_ratio" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -957,7 +951,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Young's modulus
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -969,22 +963,22 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20young_modulus" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ElasticConstants" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>Surfaces</strong></summary>
 
 **Description:** Surface property
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Surfaces" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:Surfaces`](https://w3id.org/nfdi4cat/catcore/Surfaces)
+**CURIE:** [`catcore:Surfaces`](https://w3id.org/nfdi4cat/catcore/Surfaces)
 
 **Schema Reference:** [Surfaces](./elements/Surfaces.md)
 
@@ -995,7 +989,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Surface energy
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1007,7 +1001,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20surface_energy" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1016,7 +1010,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Miller indices of surface
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1026,7 +1020,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20miller_indices" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1035,7 +1029,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Slab thickness
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1047,7 +1041,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20slab_thickness" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1056,7 +1050,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Vacuum spacing
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1068,7 +1062,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20vacuum_spacing" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1077,7 +1071,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Surface termination method
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1087,22 +1081,22 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20surface_termination_method" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Surfaces" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>DielectricTensors</strong></summary>
 
 **Description:** Dielectric tensors property
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20DielectricTensors" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:DielectricTensors`](https://w3id.org/nfdi4cat/catcore/DielectricTensors)
+**CURIE:** [`catcore:DielectricTensors`](https://w3id.org/nfdi4cat/catcore/DielectricTensors)
 
 **Schema Reference:** [DielectricTensors](./elements/DielectricTensors.md)
 
@@ -1113,7 +1107,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Material composition
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1123,7 +1117,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1132,7 +1126,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Crystal structure (space group, lattice parameters)
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1142,7 +1136,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1151,7 +1145,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Energy cutoff for plane wave basis
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1163,7 +1157,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20energy_cutoff" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1172,7 +1166,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Convergence criteria (e.g., energy, force)
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1182,7 +1176,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20convergence_criteria" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1191,7 +1185,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** k-point mesh for sampling
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1201,22 +1195,22 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20k_point_mesh" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20DielectricTensors" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>PhononDispersion</strong></summary>
 
 **Description:** Phonon dispersion property
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20PhononDispersion" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:PhononDispersion`](https://w3id.org/nfdi4cat/catcore/PhononDispersion)
+**CURIE:** [`catcore:PhononDispersion`](https://w3id.org/nfdi4cat/catcore/PhononDispersion)
 
 **Schema Reference:** [PhononDispersion](./elements/PhononDispersion.md)
 
@@ -1227,7 +1221,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Material composition
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1237,7 +1231,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1246,7 +1240,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Crystal structure (space group, lattice parameters)
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1256,7 +1250,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1265,7 +1259,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Force constant calculation method
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1275,7 +1269,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20force_constant_method" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1284,7 +1278,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** k/q-point mesh for phonons
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1294,7 +1288,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20kq_point_mesh" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1303,7 +1297,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Smearing/broadening parameter
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1315,7 +1309,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20smearing_parameter" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1324,7 +1318,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Imaginary modes present
 
-**Range:** boolean
+**Data Type:** boolean
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1334,22 +1328,22 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20imaginary_modes" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20PhononDispersion" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>EquationsOfState</strong></summary>
 
 **Description:** Equations of state property
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20EquationsOfState" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:EquationsOfState`](https://w3id.org/nfdi4cat/catcore/EquationsOfState)
+**CURIE:** [`catcore:EquationsOfState`](https://w3id.org/nfdi4cat/catcore/EquationsOfState)
 
 **Schema Reference:** [EquationsOfState](./elements/EquationsOfState.md)
 
@@ -1360,7 +1354,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Material composition
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1370,7 +1364,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1379,7 +1373,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Crystal structure (space group, lattice parameters)
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1389,7 +1383,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1398,7 +1392,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Fit method (e.g., Birch-Murnaghan, Vinet)
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1408,7 +1402,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20fit_method" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1417,7 +1411,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Energy cutoff for plane wave basis
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1429,7 +1423,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20energy_cutoff" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1438,7 +1432,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** k-point mesh for sampling
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1448,7 +1442,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20k_point_mesh" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1457,7 +1451,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Bulk modulus
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1469,7 +1463,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20bulk_modulus" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1478,7 +1472,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Pressure derivative of bulk modulus
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1488,7 +1482,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20pressure_derivative" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1497,7 +1491,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Residuals of fit
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1507,22 +1501,22 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20fit_residuals" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20EquationsOfState" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>AqueousStability</strong></summary>
 
 **Description:** Aqueous stability property
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20AqueousStability" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:AqueousStability`](https://w3id.org/nfdi4cat/catcore/AqueousStability)
+**CURIE:** [`catcore:AqueousStability`](https://w3id.org/nfdi4cat/catcore/AqueousStability)
 
 **Schema Reference:** [AqueousStability](./elements/AqueousStability.md)
 
@@ -1533,7 +1527,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Material composition
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1543,7 +1537,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1552,7 +1546,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Crystal structure (space group, lattice parameters)
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1562,7 +1556,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1571,7 +1565,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** pH range considered
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1581,7 +1575,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ph_range" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1590,7 +1584,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Potential range considered
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1600,7 +1594,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20potential_range" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1609,7 +1603,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Solvation model used
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1619,7 +1613,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20solvation_model" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1628,7 +1622,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Ionic strength of solution
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1640,7 +1634,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ionic_strength" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1649,7 +1643,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Temperature
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1661,22 +1655,22 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20AqueousStability" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>GrainBoundaries</strong></summary>
 
 **Description:** Grain boundaries property
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20GrainBoundaries" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:GrainBoundaries`](https://w3id.org/nfdi4cat/catcore/GrainBoundaries)
+**CURIE:** [`catcore:GrainBoundaries`](https://w3id.org/nfdi4cat/catcore/GrainBoundaries)
 
 **Schema Reference:** [GrainBoundaries](./elements/GrainBoundaries.md)
 
@@ -1687,7 +1681,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Material composition
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1697,7 +1691,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1706,7 +1700,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Grain boundary plane
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1716,7 +1710,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20grain_boundary_plane" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1725,7 +1719,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Misorientation angle
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1737,7 +1731,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20misorientation_angle" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1746,7 +1740,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Grain boundary energy
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1758,7 +1752,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20grain_boundary_energy" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1767,7 +1761,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Simulation cell size
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1777,7 +1771,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20simulation_cell_size" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1786,7 +1780,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** GB excess volume
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1796,7 +1790,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20gb_excess_volume" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1805,7 +1799,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** GB structural units description
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1815,7 +1809,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20gb_structural_units" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1824,7 +1818,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Charge or defect segregation data
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1834,22 +1828,22 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20charge_defect_segregation" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20GrainBoundaries" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>ElectronicStructure</strong></summary>
 
 **Description:** Electronic structure property
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ElectronicStructure" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:ElectronicStructure`](https://w3id.org/nfdi4cat/catcore/ElectronicStructure)
+**CURIE:** [`catcore:ElectronicStructure`](https://w3id.org/nfdi4cat/catcore/ElectronicStructure)
 
 **Schema Reference:** [ElectronicStructure](./elements/ElectronicStructure.md)
 
@@ -1860,7 +1854,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Material composition
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1870,7 +1864,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1879,7 +1873,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Crystal structure (space group, lattice parameters)
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1889,7 +1883,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1898,7 +1892,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** k-point mesh for sampling
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1908,7 +1902,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20k_point_mesh" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1917,7 +1911,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Energy cutoff for plane wave basis
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1929,7 +1923,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20energy_cutoff" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1938,7 +1932,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Smearing method and width
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1948,7 +1942,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20smearing_method" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1957,7 +1951,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Spin-polarized calculation
 
-**Range:** boolean
+**Data Type:** boolean
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1967,7 +1961,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20spin_polarized" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1976,7 +1970,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Band path used
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -1986,7 +1980,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20band_path" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -1995,7 +1989,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Fermi energy
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -2007,22 +2001,22 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20fermi_energy" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ElectronicStructure" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>Ferroelectrics</strong></summary>
 
 **Description:** Ferroelectric property
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Ferroelectrics" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:Ferroelectrics`](https://w3id.org/nfdi4cat/catcore/Ferroelectrics)
+**CURIE:** [`catcore:Ferroelectrics`](https://w3id.org/nfdi4cat/catcore/Ferroelectrics)
 
 **Schema Reference:** [Ferroelectrics](./elements/Ferroelectrics.md)
 
@@ -2033,7 +2027,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Material composition
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -2043,7 +2037,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -2052,7 +2046,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Crystal structure (space group, lattice parameters)
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -2062,7 +2056,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -2071,7 +2065,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Polarization direction
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -2081,7 +2075,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20polarization_direction" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -2090,7 +2084,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Spontaneous polarization magnitude
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -2102,7 +2096,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20spontaneous_polarization" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -2111,7 +2105,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Reference paraelectric structure
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -2121,7 +2115,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20reference_structure" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -2130,7 +2124,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Switching barrier
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -2142,7 +2136,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20switching_barrier" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -2151,7 +2145,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Coercive field
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -2163,7 +2157,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20coercive_field" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -2172,7 +2166,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Temperature dependence
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -2182,22 +2176,22 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature_dependence" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Ferroelectrics" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <details markdown="1">
 <summary><strong>BandGap</strong></summary>
 
 **Description:** Band gap property
 
-<p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20BandGap" target="_blank" class="md-button md-button--primary">
-        💡 Submit Documentation Feedback
-      </a>
-    </p>**CURIE:** [`catcore:BandGap`](https://w3id.org/nfdi4cat/catcore/BandGap)
+**CURIE:** [`catcore:BandGap`](https://w3id.org/nfdi4cat/catcore/BandGap)
 
 **Schema Reference:** [BandGap](./elements/BandGap.md)
 
@@ -2208,7 +2202,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Material sample
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -2218,7 +2212,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_sample" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -2227,7 +2221,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Structure or model used
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -2237,7 +2231,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20structure_model" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -2246,7 +2240,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** k-point mesh for sampling
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -2256,7 +2250,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20k_point_mesh" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -2265,7 +2259,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Smearing or broadening parameter
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -2277,7 +2271,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20smearing_broadening" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -2286,7 +2280,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Direct or indirect band gap
 
-**Range:** string
+**Data Type:** string
 
 **Cardinality:**  Optional, Multivalued
 
@@ -2296,7 +2290,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20direct_indirect" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -2305,7 +2299,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Experimental reference value
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -2317,7 +2311,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20experimental_reference" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -2326,7 +2320,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** GW or hybrid correction used
 
-**Range:** boolean
+**Data Type:** boolean
 
 **Cardinality:**  Optional, Multivalued
 
@@ -2336,7 +2330,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20gw_hybrid_correction" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
@@ -2345,7 +2339,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Excitonic correction applied
 
-**Range:** float
+**Data Type:** float
 
 **Cardinality:**  Optional, Multivalued
 
@@ -2357,15 +2351,19 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20excitonic_correction" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
-</details>
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20BandGap" target="_blank" class="md-button md-button--primary">
+        💡 Submit Term Feedback
+      </a>
+    </p></details>
 
 <p>
   <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20calculated_property" target="_blank" class="md-button md-button--primary">
-    💡 Submit Documentation Feedback
+    💡 Submit Term Feedback
   </a>
 </p></details>
 
