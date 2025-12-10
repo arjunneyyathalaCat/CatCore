@@ -2,7 +2,7 @@
 
 # CatCore
 
-A metadata collection for catalysis related research
+A metadata reference collection for catalysis related research
 
 ## Documentation Website
 
