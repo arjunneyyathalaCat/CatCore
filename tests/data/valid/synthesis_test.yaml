@@ -1,0 +1,37 @@
+---
+# Test Dataset 1: Comprehensive Synthesis Example
+# Catalyst: Pt/Al2O3 prepared by wet impregnation
+
+identifier: "SYNTH_001_Pt_Al2O3"
+nominal_composition: "5 wt% Pt/Al2O3"
+catalyst_measured_properties: "BET surface area: 185 m²/g, Pt particle size: 2.3 nm (TEM), Pt loading: 4.8 wt% (ICP-AES)"
+
+precursor:
+  - identifier: "PREC_001"
+    precursor_quantity: [0.0485]  # g of H2PtCl6·6H2O
+
+preparation_method:
+  - identifier: "PREP_001"
+    class_uri: "catcore:Impregnation"
+    impregnation_type: ["wet_impregnation"]
+    impregnation_duration: [4.0]  # hours
+    impregnation_temperature: [25.0]  # Celsius
+    drying_device: ["vacuum oven"]
+    drying_temperature: [110.0]  # Celsius
+    drying_time: [12.0]  # hours
+    drying_atmosphere: ["air"]
+    calcination_initial_temperature: [25.0]  # Celsius
+    calcination_final_temperature: [450.0]  # Celsius
+    calcination_dwelling_time: [4.0]  # hours
+    number_of_cycles: [1]
+    calcination_gaseous_environment: ["synthetic air (20% O2/N2)"]
+    calcination_heating_rate: [5.0]  # Celsius/min
+    calcination_gas_flow_rate: [100.0]  # mL/min
+
+storage_conditions: ["stored in desiccator under argon atmosphere at room temperature"]
+
+support: ["γ-Al2O3, Sasol Puralox, 200 m²/g"]
+
+solvent: ["deionized water", "ethanol"]
+
+sample_pretreatment: ["reduction in H2 at 400°C for 2 hours prior to catalytic testing"]

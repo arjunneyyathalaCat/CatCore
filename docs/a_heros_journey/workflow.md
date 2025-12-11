@@ -31,6 +31,7 @@ To transition data from the "quickfix" spreadsheets into the machine-readable da
 
 ### The Autofill Tool (Python Script)
 This custom script is the backbone of the current workflow. Its purpose is to overcome institutional formatting differences. The script automatically:
+
 1.  **Reads Data:** Ingests data from the varied individual Excel spreadsheets submitted by the partners.
 2.  **Validates:** Checks against the mandatory fields defined by **CatCore**.
 3.  **Transports and Unifies:** Maps and writes the extracted data into a single, standardized, master data template.
@@ -39,6 +40,7 @@ This script ensures that the structural integrity of the final data set is maint
 
 ### The Excel-to-JSON Converter (KIT Quickfix)
 To make the standardized spreadsheet data instantly usable for machine analysis, a converter was developed. This tool transforms the structured spreadsheet data into:
+
 * **JSON** (`.json` files): Ideal for object storage and web-based applications.
 * **CSV** (`.csv` files): Essential for use in data science libraries and ML models.
 

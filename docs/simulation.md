@@ -1,21 +1,24 @@
 # Simulation
 
-The data class 'Simulation' describes the minimum information which should be reported 
-with research data for conducting simulations in the field of catalysis.
+test description
 
-## Slots
-
-Fields for Metadata which should be described when using this Metadata Aspect.
+<details markdown="1"><summary markdown="1"> **Legend** </summary>
 
 - **Description:**A short description for Comprehension purposes
 
-- **Data Type:** Further Aspects which are Important for describing a certain aspect
+- **Data Type:** This specifies exactly what kind of information belongs in this field. Most simply, it could be a direct value, such as a number (float) or a piece of text (string). However, the Data Type can also point to another Class in the schema. When this happens, the field is not just a single value; it becomes a structured container. Designating a Class as the Data Type causes the field to contain a complete structured record, defined entirely by its own comprehensive collection of specific fields. Consequently, this allows for the systematic construction of complex data structures via organized, nested information layers within the broader schema architecture.
 
-- **Cardinality:** A description how often it is allowed and how important it is to describe a certain aspect
+- **Cardinality:** This controls how many entries a specific data field must have. It defines if a field is required or optional, and whether it can accept a single value versus a list of multiple values.
 
-- **CURIE:** The Abbreviated form of a URI, where the Prefix, e.g. voc4cat, described to which terminology a Concept belong. The Links are fully implemented here. For reusing these CURIE's you need to substitute the prefix against the URI for it.
+- **CURIE:** A CURIE (Compact URI) is a short, easy-to-read reference that acts as a useful shortcut for a long, complex web address. Instead of seeing a full URL, you will see a two-part reference like gene:symbol, where the parts are separated by a colon. The first part is the prefix (a short code for the source website), and the second is the local identifier for the specific item. This structure is much easier to read and type, making the schema less cluttered and reducing errors. The full web link (URI) for the CURIE is always available if you click the provided link.
 
-- **Schema Reference:** A Link to the native LinkML Documentation on which this metadatacatalog and strucutre is based upon
+- **Schema Reference:** This link directs you to the complete, technical documentation for this part of the schema. This detailed view is generated automatically by LinkML’s documentation tool and provides all underlying rules, data types, and complex relationships for expert users and developers.
+
+- **Slots:** A Slot represents an individual data field or attribute that belongs to a specific Class (entity type) within the schema. If a Class defines an entity like 'Book', the Slots define the individual pieces of information about that book, such as the 'title', 'author', and 'ISBN'. Essentially, Slots are the essential building blocks that define the characteristics and permissible data for every record in the schema.
+
+- **Enumerations:** Often called an Enum, Enumerations are a predefined, fixed list of permissible values that a Slot can accept. It is used to strictly limit the available choices for a data field to ensure consistency and prevent errors. For example, a 'Status' field might be restricted to the Enumeration list of only 'Active', 'Inactive', or 'Pending'. Any data entered that is not on this fixed list is considered invalid by the schema.
+
+</details>## Slots
 
 <details markdown="1">
 <summary><strong>software package</strong> (Required, Multivalued)</summary>
@@ -31,7 +34,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [software_package](./elements/software_package.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20software_package" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20software_package target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -61,7 +64,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [SimulationMethod](./elements/SimulationMethod.md)
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20SimulationMethod" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20SimulationMethod target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
@@ -93,7 +96,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [exchange_correlation_functional](./elements/exchange_correlation_functional.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20exchange_correlation_functional" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20exchange_correlation_functional target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -114,7 +117,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** eV
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20energy_cutoff" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20energy_cutoff target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -133,7 +136,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [convergence_criteria](./elements/convergence_criteria.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20convergence_criteria" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20convergence_criteria target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -152,7 +155,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [dft_u_parameters](./elements/dft_u_parameters.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20dft_u_parameters" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20dft_u_parameters target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -171,7 +174,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [spin_polarization](./elements/spin_polarization.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20spin_polarization" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20spin_polarization target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -192,13 +195,13 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** eV
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20total_energy_per_atom" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20total_energy_per_atom target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20DFT" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20DFT target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
@@ -228,7 +231,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [force_field](./elements/force_field.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20force_field" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20force_field target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -249,7 +252,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** fs
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20simulation_timestep" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20simulation_timestep target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -270,7 +273,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** ps
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20simulation_time" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20simulation_time target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -289,7 +292,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [ensemble_type](./elements/ensemble_type.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ensemble_type" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ensemble_type target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -308,13 +311,13 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [number_of_atoms](./elements/number_of_atoms.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20number_of_atoms" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20number_of_atoms target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20MolecularDynamics" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20MolecularDynamics target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
@@ -344,7 +347,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [rate_constants](./elements/rate_constants.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20rate_constants" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20rate_constants target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -363,7 +366,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [solver_type](./elements/solver_type.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20solver_type" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20solver_type target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -384,7 +387,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** Cel
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -405,7 +408,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** bar
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20pressure" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20pressure target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -424,7 +427,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [surface_coverage](./elements/surface_coverage.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20surface_coverage" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20surface_coverage target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -445,13 +448,13 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** eV
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20activation_energy" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20activation_energy target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Microkinetics" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Microkinetics target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
@@ -481,7 +484,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [interaction_potential](./elements/interaction_potential.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20interaction_potential" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20interaction_potential target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -500,7 +503,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [number_of_steps](./elements/number_of_steps.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20number_of_steps" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20number_of_steps target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -521,7 +524,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** Cel
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -540,7 +543,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [lattice_size_type](./elements/lattice_size_type.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20lattice_size_type" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20lattice_size_type target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -559,7 +562,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [acceptance_criteria](./elements/acceptance_criteria.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20acceptance_criteria" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20acceptance_criteria target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -578,7 +581,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [equilibration_steps](./elements/equilibration_steps.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20equilibration_steps" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20equilibration_steps target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -597,19 +600,19 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [sampling_interval](./elements/sampling_interval.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20sampling_interval" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20sampling_interval target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20MonteCarlo" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20MonteCarlo target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20simulation_method" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20simulation_method target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -639,7 +642,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [CalculatedProperty](./elements/CalculatedProperty.md)
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20CalculatedProperty" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20CalculatedProperty target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
@@ -673,7 +676,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** eV
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20formation_energy" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20formation_energy target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -692,7 +695,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [reference_energies](./elements/reference_energies.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20reference_energies" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20reference_energies target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -713,7 +716,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** eV
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20energy_above_hull" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20energy_above_hull target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -732,7 +735,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [phase_diagram_type](./elements/phase_diagram_type.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20phase_diagram_type" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20phase_diagram_type target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -751,13 +754,13 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [competing_phases](./elements/competing_phases.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20competing_phases" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20competing_phases target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ThermodynamicStability" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ThermodynamicStability target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
@@ -787,7 +790,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [piezoelectric_tensor](./elements/piezoelectric_tensor.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20piezoelectric_tensor" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20piezoelectric_tensor target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -806,7 +809,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [crystal_symmetry](./elements/crystal_symmetry.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_symmetry" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_symmetry target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -825,7 +828,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [strain_applied](./elements/strain_applied.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20strain_applied" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20strain_applied target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -844,13 +847,13 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [ionic_electronic_contributions](./elements/ionic_electronic_contributions.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ionic_electronic_contributions" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ionic_electronic_contributions target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Piezoelectricity" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Piezoelectricity target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
@@ -880,7 +883,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [elastic_tensor](./elements/elastic_tensor.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20elastic_tensor" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20elastic_tensor target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -901,7 +904,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** GPa
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20bulk_modulus" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20bulk_modulus target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -922,7 +925,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** GPa
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20shear_modulus" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20shear_modulus target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -941,7 +944,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [poisson_ratio](./elements/poisson_ratio.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20poisson_ratio" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20poisson_ratio target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -962,13 +965,13 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** GPa
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20young_modulus" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20young_modulus target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ElasticConstants" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ElasticConstants target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
@@ -1000,7 +1003,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** J/m2
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20surface_energy" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20surface_energy target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1019,7 +1022,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [miller_indices](./elements/miller_indices.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20miller_indices" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20miller_indices target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1040,7 +1043,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** angstrom
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20slab_thickness" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20slab_thickness target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1061,7 +1064,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** angstrom
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20vacuum_spacing" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20vacuum_spacing target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1080,13 +1083,13 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [surface_termination_method](./elements/surface_termination_method.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20surface_termination_method" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20surface_termination_method target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Surfaces" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Surfaces target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
@@ -1116,7 +1119,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [material_composition](./elements/material_composition.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1135,7 +1138,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [crystal_structure](./elements/crystal_structure.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1156,7 +1159,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** eV
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20energy_cutoff" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20energy_cutoff target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1175,7 +1178,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [convergence_criteria](./elements/convergence_criteria.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20convergence_criteria" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20convergence_criteria target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1194,13 +1197,13 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [k_point_mesh](./elements/k_point_mesh.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20k_point_mesh" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20k_point_mesh target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20DielectricTensors" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20DielectricTensors target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
@@ -1230,7 +1233,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [material_composition](./elements/material_composition.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1249,7 +1252,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [crystal_structure](./elements/crystal_structure.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1268,7 +1271,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [force_constant_method](./elements/force_constant_method.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20force_constant_method" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20force_constant_method target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1287,7 +1290,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [kq_point_mesh](./elements/kq_point_mesh.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20kq_point_mesh" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20kq_point_mesh target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1308,7 +1311,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** eV
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20smearing_parameter" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20smearing_parameter target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1327,13 +1330,13 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [imaginary_modes](./elements/imaginary_modes.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20imaginary_modes" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20imaginary_modes target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20PhononDispersion" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20PhononDispersion target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
@@ -1363,7 +1366,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [material_composition](./elements/material_composition.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1382,7 +1385,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [crystal_structure](./elements/crystal_structure.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1401,7 +1404,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [fit_method](./elements/fit_method.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20fit_method" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20fit_method target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1422,7 +1425,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** eV
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20energy_cutoff" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20energy_cutoff target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1441,7 +1444,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [k_point_mesh](./elements/k_point_mesh.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20k_point_mesh" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20k_point_mesh target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1462,7 +1465,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** GPa
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20bulk_modulus" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20bulk_modulus target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1481,7 +1484,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [pressure_derivative](./elements/pressure_derivative.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20pressure_derivative" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20pressure_derivative target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1500,13 +1503,13 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [fit_residuals](./elements/fit_residuals.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20fit_residuals" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20fit_residuals target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20EquationsOfState" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20EquationsOfState target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
@@ -1536,7 +1539,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [material_composition](./elements/material_composition.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1555,7 +1558,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [crystal_structure](./elements/crystal_structure.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1574,7 +1577,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [ph_range](./elements/ph_range.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ph_range" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ph_range target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1593,7 +1596,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [potential_range](./elements/potential_range.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20potential_range" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20potential_range target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1612,7 +1615,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [solvation_model](./elements/solvation_model.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20solvation_model" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20solvation_model target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1633,7 +1636,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** mol/L
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ionic_strength" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ionic_strength target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1654,13 +1657,13 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** Cel
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20AqueousStability" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20AqueousStability target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
@@ -1690,7 +1693,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [material_composition](./elements/material_composition.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1709,7 +1712,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [grain_boundary_plane](./elements/grain_boundary_plane.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20grain_boundary_plane" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20grain_boundary_plane target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1730,7 +1733,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** deg
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20misorientation_angle" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20misorientation_angle target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1751,7 +1754,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** J/m2
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20grain_boundary_energy" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20grain_boundary_energy target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1770,7 +1773,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [simulation_cell_size](./elements/simulation_cell_size.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20simulation_cell_size" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20simulation_cell_size target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1789,7 +1792,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [gb_excess_volume](./elements/gb_excess_volume.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20gb_excess_volume" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20gb_excess_volume target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1808,7 +1811,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [gb_structural_units](./elements/gb_structural_units.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20gb_structural_units" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20gb_structural_units target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1827,13 +1830,13 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [charge_defect_segregation](./elements/charge_defect_segregation.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20charge_defect_segregation" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20charge_defect_segregation target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20GrainBoundaries" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20GrainBoundaries target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
@@ -1863,7 +1866,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [material_composition](./elements/material_composition.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1882,7 +1885,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [crystal_structure](./elements/crystal_structure.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1901,7 +1904,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [k_point_mesh](./elements/k_point_mesh.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20k_point_mesh" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20k_point_mesh target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1922,7 +1925,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** eV
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20energy_cutoff" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20energy_cutoff target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1941,7 +1944,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [smearing_method](./elements/smearing_method.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20smearing_method" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20smearing_method target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1960,7 +1963,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [spin_polarized](./elements/spin_polarized.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20spin_polarized" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20spin_polarized target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -1979,7 +1982,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [band_path](./elements/band_path.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20band_path" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20band_path target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -2000,13 +2003,13 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** eV
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20fermi_energy" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20fermi_energy target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ElectronicStructure" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ElectronicStructure target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
@@ -2036,7 +2039,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [material_composition](./elements/material_composition.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_composition target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -2055,7 +2058,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [crystal_structure](./elements/crystal_structure.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20crystal_structure target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -2074,7 +2077,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [polarization_direction](./elements/polarization_direction.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20polarization_direction" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20polarization_direction target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -2095,7 +2098,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** uC/cm2
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20spontaneous_polarization" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20spontaneous_polarization target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -2114,7 +2117,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [reference_structure](./elements/reference_structure.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20reference_structure" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20reference_structure target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -2135,7 +2138,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** eV
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20switching_barrier" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20switching_barrier target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -2156,7 +2159,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** kV/cm
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20coercive_field" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20coercive_field target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -2175,13 +2178,13 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [temperature_dependence](./elements/temperature_dependence.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature_dependence" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature_dependence target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Ferroelectrics" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Ferroelectrics target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
@@ -2211,7 +2214,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [material_sample](./elements/material_sample.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_sample" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20material_sample target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -2230,7 +2233,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [structure_model](./elements/structure_model.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20structure_model" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20structure_model target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -2249,7 +2252,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [k_point_mesh](./elements/k_point_mesh.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20k_point_mesh" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20k_point_mesh target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -2270,7 +2273,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** eV
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20smearing_broadening" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20smearing_broadening target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -2289,7 +2292,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [direct_indirect](./elements/direct_indirect.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20direct_indirect" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20direct_indirect target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -2310,7 +2313,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** eV
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20experimental_reference" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20experimental_reference target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -2329,7 +2332,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Schema Reference:** [gw_hybrid_correction](./elements/gw_hybrid_correction.md)
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20gw_hybrid_correction" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20gw_hybrid_correction target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
@@ -2350,19 +2353,19 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 **Unit:** eV
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20excitonic_correction" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20excitonic_correction target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>
 
 <p>
-      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20BandGap" target="_blank" class="md-button md-button--primary">
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20BandGap target="_blank" class="md-button md-button--primary">
         💡 Submit Term Feedback
       </a>
     </p></details>
 
 <p>
-  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20calculated_property" target="_blank" class="md-button md-button--primary">
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20calculated_property target="_blank" class="md-button md-button--primary">
     💡 Submit Term Feedback
   </a>
 </p></details>

@@ -32,10 +32,10 @@ watch:
 nav:
   - Home: index.md
   - A Hero's Journey:
-    - Introduction: a_heros_journey.md
-    - Infrastructure: infrastructure.md
-    - Workflow: workflow.md
-    - Collaborations and Future Work: collaboration_and_future.md
+    - Introduction: a_heros_journey/a_heros_journey.md
+    - Infrastructure: a_heros_journey/infrastructure.md
+    - Workflow: a_heros_journey/workflow.md
+    - Collaborations and Future Work: a_heros_journey/collaboration_and_future.md
   - Documentation:
     - Reaction: reaction.md
     - Characterization: characterization.md

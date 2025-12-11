@@ -11,6 +11,7 @@ Given the participation of industry partners like BASF SE, security is paramount
 
 ### Functional Requirements
 Beyond security, the platform must facilitate efficient research. Key functional requirements include:
+
 * **User and Access Management:** Precise control over who can view, upload, or modify specific data sets.
 * **Data Ingestion and Metadata Capture:** Streamlined tools for uploading data while immediately capturing mandatory metadata.
 * **Discoverability and Querying:** Features that allow researchers to easily find relevant data through standardized metadata fields.

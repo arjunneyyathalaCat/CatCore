@@ -1,5 +1,5 @@
 # Auto generated from catcore.yaml by pythongen.py version: 0.0.1
-# Generation date: 2025-12-03T09:32:44
+# Generation date: 2025-12-11T12:56:00
 # Schema: catcore-metadata
 #
 # id: https://w3id.org/nfdi4cat/catcore
@@ -68,12 +68,12 @@ version = "1.0.0"
 AFP = CurieNamespace('AFP', 'http://purl.allotrope.org/ontologies/process#AFP_')
 AFQ = CurieNamespace('AFQ', 'http://purl.allotrope.org/ontologies/quality#AFQ_')
 AFR = CurieNamespace('AFR', 'http://purl.allotrope.org/ontologies/result#AFR_')
-AFRL = CurieNamespace('AFRL', 'http://example.org/UNKNOWN/AFRL/')
-APOLLO_SV = CurieNamespace('APOLLO_SV', 'http://example.org/UNKNOWN/APOLLO_SV/')
+AFRL = CurieNamespace('AFRL', 'http://purl.allotrope.org/ontologies/role#AFRL_')
+APOLLO_SV = CurieNamespace('APOLLO_SV', 'http://purl.obolibrary.org/obo/APOLLO_SV_')
 CHMO = CurieNamespace('CHMO', 'http://purl.obolibrary.org/obo/CHMO_')
 NCIT = CurieNamespace('NCIT', 'http://purl.obolibrary.org/obo/NCIT_')
 OBI = CurieNamespace('OBI', 'http://purl.obolibrary.org/obo/OBI_')
-SIO = CurieNamespace('SIO', 'http://example.org/UNKNOWN/SIO/')
+SIO = CurieNamespace('SIO', 'http://semanticscience.org/resource/SIO_')
 CATCORE = CurieNamespace('catcore', 'https://w3id.org/nfdi4cat/catcore/')
 LINKML = CurieNamespace('linkml', 'https://w3id.org/linkml/')
 NMRCV = CurieNamespace('nmrCV', 'http://nmrML.org/nmrCV#NMR:')
