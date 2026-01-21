@@ -13,6 +13,7 @@ sample_pretreatment: ["calcined at 450C for 4 hours", "none", "degassed at 300C 
 characterization_technique:
   # Powder XRD
   - identifier: "CHAR_TECH_001"
+    "@type": "PowderXRD"
     xray_source: ["Cu Kalpha (lambda = 1.5406 A)"]
     atmosphere: ["ambient air"]
     operation_mode: ["continuous scan"]
@@ -26,6 +27,7 @@ characterization_technique:
 
   # XPS
   - identifier: "CHAR_TECH_002"
+    "@type": "XPS"
     xray_source: ["Al Kalpha (1486.6 eV)"]
     total_acquisition_time: [1800.0]  # seconds
     number_of_scans: [10]
@@ -40,6 +42,7 @@ characterization_technique:
 
   # BET Surface Area
   - identifier: "CHAR_TECH_003"
+    "@type": "BET"
     adsorbate_gas: ["N2"]
     degassing_temperature: [300.0]  # Celsius
     measurement_temperature: [77.0]  # Kelvin
@@ -48,6 +51,7 @@ characterization_technique:
 
   # Temperature Programmed Reduction
   - identifier: "CHAR_TECH_004"
+    "@type": "TPR"
     reducing_gas_composition: ["5% H2/Ar"]
     heating_rate: [10.0]  # Celsius/min
     minimum_temperature: [50.0]  # Celsius

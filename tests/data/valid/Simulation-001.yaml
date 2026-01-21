@@ -7,6 +7,7 @@ software_package: ["VASP 6.3.0", "ASE 3.22.1"]
 
 simulation_method:
   - identifier: "SIM_METHOD_001"
+    "@type": "DFT"
     exchange_correlation_functional: ["PBE (Perdew-Burke-Ernzerhof)"]
     energy_cutoff: [450.0]  # eV
     convergence_criteria: ["energy: 1x10-5 eV, forces: 0.02 eV/A"]
@@ -17,6 +18,7 @@ simulation_method:
 calculated_property:
   # Surface properties
   - identifier: "CALC_PROP_001"
+    "@type": "Surfaces"
     surface_energy: [0.089]  # J/m²
     miller_indices: ["(111)"]
     slab_thickness: [12.75]  # Angstrom (5 layers)
@@ -25,17 +27,19 @@ calculated_property:
 
   # Electronic structure
   - identifier: "CALC_PROP_002"
+    "@type": "ElectronicStructure"
     material_composition: ["Pt(111) surface with adsorbed CO"]
     crystal_structure: ["fcc Pt substrate"]
     k_point_mesh: ["5x5x1 for surface calculations"]
     energy_cutoff: [450.0]  # eV
     smearing_method: ["Methfessel-Paxton, sigma=0.2 eV"]
     spin_polarized: [true]
-    band_path: ["|-M-K-|"]
+    band_path: ["Γ-M-K-Γ"]
     fermi_energy: [5.42]  # eV
 
   # Adsorption energies (as additional property)
   - identifier: "CALC_PROP_003"
+    "@type": "ThermodynamicStability"
     formation_energy: [-1.68]  # eV (CO adsorption energy)
     reference_energies: ["E(Pt_slab) = -261.70 eV, E(CO_gas) = -14.84 eV, E(Pt_slab+CO) = -278.22 eV"]
     energy_above_hull: [0.0]  # eV (most stable configuration)

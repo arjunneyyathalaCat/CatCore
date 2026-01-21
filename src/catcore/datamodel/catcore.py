@@ -1,5 +1,5 @@
 # Auto generated from catcore.yaml by pythongen.py version: 0.0.1
-# Generation date: 2025-12-11T14:30:24
+# Generation date: 2026-01-21T11:56:35
 # Schema: catcore-metadata
 #
 # id: https://w3id.org/nfdi4cat/catcore
